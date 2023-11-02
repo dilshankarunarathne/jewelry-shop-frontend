@@ -7,7 +7,7 @@ const slides = [
   { 
     img: '/path/to/image1.jpg', 
     heading: "Enhance Your Beauty",
-    description: '' 
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' 
   },
   { 
     img: '/path/to/image2.jpg', 
