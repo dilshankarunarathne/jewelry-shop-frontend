@@ -13,6 +13,7 @@ function Navigation({ href, children }: NavigationProps) {
 }
 
 export function Navbar() {
+  const router = useRouter();
   return (
     <nav>
       <Link href="/">
