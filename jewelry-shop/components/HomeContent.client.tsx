@@ -6,6 +6,7 @@ import './HomeContent.client.css';
 const slides = [
   { 
     img: '/path/to/image1.jpg', 
+    
     description: 'Description 1' 
   },
   { 
