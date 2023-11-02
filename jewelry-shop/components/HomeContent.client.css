@@ -1,0 +1,14 @@
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.slide img {
+    width: 100px; 
+}
+
+.slide p {
+    margin-left: 10px;
+}
+
