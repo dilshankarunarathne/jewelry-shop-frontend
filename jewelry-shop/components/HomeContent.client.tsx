@@ -8,7 +8,8 @@ const slides = [
     img: '/path/to/image1.jpg', 
     description: 'Description 1' 
   },
-  { img: '/path/to/image2.jpg', description: 'Description 2' },
+  { 
+    img: '/path/to/image2.jpg', description: 'Description 2' },
   { img: '/path/to/image3.jpg', description: 'Description 3' }
 ];
 
