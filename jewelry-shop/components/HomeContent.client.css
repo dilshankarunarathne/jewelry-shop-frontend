@@ -14,6 +14,10 @@
     pointer-events: none; 
 }
 
+.buttonsnextprev {
+    
+}
+
 .slide {
     position: relative;
     width: 100%;
