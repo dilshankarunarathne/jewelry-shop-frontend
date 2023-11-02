@@ -5,17 +5,17 @@ import './HomeContent.client.css';
 
 const slides = [
   { 
-    img: '/path/to/image1.jpg', 
+    img: '/background-women-1.png', 
     heading: "Enhance Your Beauty",
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' 
   },
   { 
-    img: '/path/to/image2.jpg', 
+    img: '/background-women-2.png',
     heading: "Choose Your Style",
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' 
   },
   { 
-    img: '/path/to/image3.jpg', 
+    img: '/background-women-3.png',
     heading: "Be Unique",
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' 
   }
