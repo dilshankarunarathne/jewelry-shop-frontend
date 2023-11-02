@@ -7,7 +7,7 @@ const slides = [
   { 
     img: '/path/to/image1.jpg', 
     heading: "Enhance Your Beauty",
-    description: 'Description 1' 
+    description: '' 
   },
   { 
     img: '/path/to/image2.jpg', 
