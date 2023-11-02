@@ -1,6 +1,6 @@
 import { Navbar } from '../../components/Navbar' 
 
-export default function ContactPage() {
+export default function PawnPage() {
   return (
     <main>
       <div className="PawnPage">
