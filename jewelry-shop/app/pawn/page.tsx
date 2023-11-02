@@ -6,9 +6,8 @@ export default function PawnPage() {
       <div className="PawnPage">
         <Navbar />
         <div>
-            
+            <h1>40% Discount</h1>
         </div>
-        <h1>40% Discount</h1>
 
       </div>
     </main>
