@@ -6,6 +6,10 @@ nav {
     align-items: center;
 }
 
+nav a {
+    padding: 10px;
+}
+
 /* Dropdown Button */
 .dropbtn {
     background-color: #FFFDCE;
