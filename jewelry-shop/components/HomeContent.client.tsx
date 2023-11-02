@@ -39,7 +39,7 @@ export default function HomeContent() {
   };
 
   return (
-    <div className="slider">
+    <div className="slider" style={{ backgroundImage: `url(${slides[currentSlide].img})` }}>
       <button onClick={goLeft}>
         <img src="/left-arrow.png" alt="Go Left" />
       </button>
