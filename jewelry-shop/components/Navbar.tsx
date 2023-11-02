@@ -1,3 +1,5 @@
+"use client"
+
 import Link from 'next/link';
 import './Navbar.css'
 import { Route } from 'react-router-dom';
