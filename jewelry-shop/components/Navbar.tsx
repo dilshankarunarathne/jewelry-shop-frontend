@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import './Navbar.css'
-import { useRouter } from 'next/router';
 
 interface NavigationProps {
   href: string;
@@ -14,13 +13,6 @@ function Navigation({ href, children }: NavigationProps) {
 }
 
 export function Navbar() {
-  const router = useRouter();
-
-  const handleAboutPageClick = (event: React.MouseEvent) => {
-    event.preventDefault();
-    router.push('/AboutPage');
-  };
-
   return (
     <nav>
       <Link href="/">
@@ -36,7 +28,7 @@ export function Navbar() {
             <Navigation href="/products/product3">Product 3</Navigation>
           </div>
         </div>
-        <Link href="/AboutPage" onClick={handleAboutPageClick}>ABOUT US</Link>
+        <Link href="/AboutPage">ABOUT US</Link>
         <Link href="/contact">CONTACT US</Link>
       </div>
     </nav>
