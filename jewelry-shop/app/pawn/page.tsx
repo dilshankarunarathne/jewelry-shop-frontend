@@ -7,7 +7,7 @@ export default function PawnPage() {
         <Navbar />
         <div>
             <h1>40% Discount</h1>
-            <p></p>
+            <p>for all in every pawning of gold articles</p>
         </div>
 
       </div>
