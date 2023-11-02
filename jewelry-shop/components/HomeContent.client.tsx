@@ -10,7 +10,8 @@ const slides = [
   },
   { 
     img: '/path/to/image2.jpg', 
-    description: 'Description 2' },
+    description: 'Description 2' 
+  },
   { 
     img: '/path/to/image3.jpg', 
     description: 'Description 3' }
