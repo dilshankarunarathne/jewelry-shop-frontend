@@ -14,7 +14,7 @@ nav {
     padding-right: 40px;
 }
 
-.dropdown-content, nav {
+.dropdbtn, nav {
     font-size: 20px;
 }
 
@@ -43,7 +43,7 @@ nav a, .dropdown {
     background-color: #FFFDCE;
     color: black;
     /* padding: 16px; */
-    font-size: 16px;
+    /* font-size: 20px; */
     border: none;
 }
 
