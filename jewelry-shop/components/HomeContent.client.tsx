@@ -6,7 +6,7 @@ import './HomeContent.client.css';
 const slides = [
   { 
     img: '/path/to/image1.jpg', 
-    heading: "",
+    heading: "Enhance Your Beauty",
     description: 'Description 1' 
   },
   { 
