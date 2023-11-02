@@ -15,6 +15,8 @@ function Navigation({ href, children }: NavigationProps) {
 }
 
 export function Navbar() {
+  const navigation = useNavigation();
+  
   return (
     <nav>
       <Link href="/">
