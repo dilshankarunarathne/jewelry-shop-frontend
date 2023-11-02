@@ -45,8 +45,7 @@ export default function HomeContent() {
       </button>
 
       <div className="slide">
-        <img src={slides[currentSlide].img} alt="Slide" />
-        <div>
+        <div className="slide-content">
           <h1>{slides[currentSlide].heading}</h1>
           <p>{slides[currentSlide].description}</p>
         </div>
