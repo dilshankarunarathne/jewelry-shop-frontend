@@ -42,6 +42,14 @@
     margin-left: 10px;
 }
 
+.slide-content h1 {
+font-size: 2em; 
+}
+
+.slide-content p {
+font-size: 1em; 
+}
+
 button img {
     width: 40px; 
 }
