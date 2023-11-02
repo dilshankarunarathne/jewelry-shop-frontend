@@ -1,3 +1,7 @@
+body {
+    color: black;
+}
+
 button {
     font-family: 'Inria Sans';
     margin-left: 10px;
