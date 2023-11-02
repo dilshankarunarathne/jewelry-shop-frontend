@@ -56,6 +56,12 @@
     color: #454545;
 }
 
+.slide-content button {
+    border: 2px solid #FFE55E; 
+    padding: 10px;
+    color: #FFE55E; 
+}
+
 button img {
     width: 40px; 
 }
