@@ -1,11 +1,11 @@
-import { Navigation } from 'next/navigation'
+import Link from 'next/link';
 
 export default function Navbar() {
   return (
     <nav>
-      <Navigation href="/">Home</Navigation>
-      <Navigation href="/about">About</Navigation>
-      // Add more Navigation as needed
+      <Link href="/">Home</Link>
+      <Link href="/about">About</Link>
+      {/* Add more Link components as needed */}
     </nav>
-  )
+  );
 }
