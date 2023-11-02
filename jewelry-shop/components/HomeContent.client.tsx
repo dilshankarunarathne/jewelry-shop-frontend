@@ -36,7 +36,8 @@ export default function HomeContent() {
         <p>{slides[currentSlide].description}</p>
       </div>
       <button onClick={goRight}>
-        Go Right</button>
+        Go Right
+      </button>
     </div>
   );
 }
