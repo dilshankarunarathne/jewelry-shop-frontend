@@ -16,17 +16,17 @@ function Navigation({ href, children }: NavigationProps) {
 export function Navbar() {
   return (
     <nav>
-      <Link href="/">HOME</Link>
+      <Link href="/"><a>Home</a></Link>
       <div className="dropdown">
-        <button className="dropbtn">PRODUCTS</button>
+        <button className="dropbtn">Products</button>
         <div className="dropdown-content">
-          <Navigation href="/products/product1">Product 1</Navigation>
-          <Navigation href="/products/product2">Product 2</Navigation>
-          <Navigation href="/products/product3">Product 3</Navigation>
+          <Link href="/products/product1"><a>Product 1</a></Link>
+          <Link href="/products/product2"><a>Product 2</a></Link>
+          <Link href="/products/product3"><a>Product 3</a></Link>
         </div>
       </div>
-      <Link href="/about">ABOUT US</Link>
-      <Link href="/contact">CONTACT US</Link>
+      <Link href="/about"><a>About</a></Link>
+      // Add more links as needed
     </nav>
   );
 }
