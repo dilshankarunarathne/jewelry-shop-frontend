@@ -15,6 +15,12 @@ function Navigation({ href, children }: NavigationProps) {
 
 export function Navbar() {
   const router = useRouter();
+
+  const handleAboutPageClick = (event: React.MouseEvent) => {
+    event.preventDefault();
+    router.push('/AboutPage');
+  };
+  
   return (
     <nav>
       <Link href="/">
