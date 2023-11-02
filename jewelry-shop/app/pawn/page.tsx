@@ -8,7 +8,7 @@ export default function PawnPage() {
         <div>
             <h1>40% Discount</h1>
             <p>for all in every pawning of gold articles</p>
-            <p></p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod</p>
         </div>
 
       </div>
