@@ -10,6 +10,9 @@ export default function PawnPage() {
             <p>for all in every pawning of gold articles</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod</p>
         </div>
+        <div>
+            <button>SEE COLLECTION</button>
+        </div>
 
       </div>
     </main>
