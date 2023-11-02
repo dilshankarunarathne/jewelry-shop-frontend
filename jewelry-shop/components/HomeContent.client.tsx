@@ -14,7 +14,8 @@ const slides = [
   },
   { 
     img: '/path/to/image3.jpg', 
-    description: 'Description 3' }
+    description: 'Description 3' 
+  }
 ];
 
 export default function HomeContent() {
