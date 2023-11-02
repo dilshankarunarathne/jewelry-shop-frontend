@@ -1,13 +1,13 @@
 .slider {
-    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 100vh; 
 }
 
 .slide img {
-    width: 100px; 
-    height: 100%;
+    width: 100vh; 
+    height: 100vh;
 }
 
 .slide p {
