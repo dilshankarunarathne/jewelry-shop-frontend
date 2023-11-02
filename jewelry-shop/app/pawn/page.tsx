@@ -7,6 +7,7 @@ export default function PawnPage() {
         <Navbar />
         <div>
             <h1>40% Discount</h1>
+            <p></p>
         </div>
 
       </div>
