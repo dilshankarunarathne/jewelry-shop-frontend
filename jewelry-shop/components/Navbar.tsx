@@ -5,7 +5,7 @@ export default function Navbar() {
     <nav>
       <Link href="/">Home</Link>
       <Link href="/about">About</Link>
-      {/* Add more Link components as needed */}
+      
     </nav>
   );
 }
