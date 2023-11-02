@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import 'next/navigation'; 
+import {useRouter} from 'next/navigation'
 
 import './Navbar.css'
 import '../app/AboutPage'
