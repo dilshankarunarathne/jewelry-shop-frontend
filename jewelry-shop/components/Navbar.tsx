@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import './Navbar.css'
+import { withRouter } from "react-router-dom";
 
 interface NavigationProps {
   href: string;
@@ -28,7 +29,7 @@ export function Navbar() {
             <Navigation href="/products/product3">Product 3</Navigation>
           </div>
         </div>
-        <Link href="/about">ABOUT US</Link>
+        <Link href="/AboutPage">ABOUT US</Link>
         <Link href="/contact">CONTACT US</Link>
       </div>
     </nav>
