@@ -5,6 +5,9 @@
     align-items: center;
     justify-content: space-between;
     height: 100vh; 
+    background-size: 50% 100%; 
+    background-repeat: no-repeat;
+    background-position: left center;
 }
 
 .slide {
