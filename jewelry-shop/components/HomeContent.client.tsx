@@ -35,7 +35,8 @@ export default function HomeContent() {
         <img src={slides[currentSlide].img} alt="Slide" />
         <p>{slides[currentSlide].description}</p>
       </div>
-      <button onClick={goRight}>Go Right</button>
+      <button onClick={goRight}>
+        Go Right</button>
     </div>
   );
 }
