@@ -28,7 +28,9 @@ export default function HomeContent() {
 
   return (
     <div className="slider">
-      <button onClick={goLeft}>Go Left</button>
+      <button onClick={goLeft}>
+        Go Left
+        </button>
       <div className="slide">
         <img src={slides[currentSlide].img} alt="Slide" />
         <p>{slides[currentSlide].description}</p>
