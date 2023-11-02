@@ -6,7 +6,7 @@ import './HomeContent.client.css';
 const slides = [
   { 
     img: '/path/to/image1.jpg', 
-
+    heading: 
     description: 'Description 1' 
   },
   { 
@@ -16,7 +16,7 @@ const slides = [
   },
   { 
     img: '/path/to/image3.jpg', 
-    
+
     description: 'Description 3' 
   }
 ];
