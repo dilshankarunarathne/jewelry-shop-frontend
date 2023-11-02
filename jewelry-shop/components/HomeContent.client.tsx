@@ -12,7 +12,7 @@ const slides = [
   { 
     img: '/path/to/image2.jpg', 
     heading: "Choose Your Style",
-    description: '' 
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' 
   },
   { 
     img: '/path/to/image3.jpg', 
