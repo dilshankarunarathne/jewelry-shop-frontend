@@ -8,8 +8,8 @@ nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 20px;
-    padding-right: 30px;
+    padding: 15px;
+    padding-right: 40px;
 }
 
 nav a, .dropdown {
