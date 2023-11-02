@@ -12,15 +12,15 @@ nav {
     padding-right: 30px;
 }
 
-nav a {
-    padding: 10px;
+nav a, .dropdown {
+    padding: 40px;
 }
 
 /* Dropdown Button */
 .dropbtn {
     background-color: #FFFDCE;
     color: black;
-    padding: 16px;
+    /* padding: 16px; */
     font-size: 16px;
     border: none;
 }
