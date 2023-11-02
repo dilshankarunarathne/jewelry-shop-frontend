@@ -6,15 +6,16 @@ nav {
     /* background-color: #FFFDCE; */
     color: black;
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between; 
     align-items: center;
     background-color: transparent;
-    padding: 15px;
+    padding: 10px;
     padding-right: 40px;
 }
 
 nav a, .dropdown {
-    padding: 40px;
+    padding: 20px;
+    padding-right: 50px;
 }
 
 .logo {
