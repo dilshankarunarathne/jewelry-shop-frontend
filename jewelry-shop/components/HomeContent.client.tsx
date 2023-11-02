@@ -41,7 +41,7 @@ export default function HomeContent() {
 
   return (
     <div className="slider" style={{ backgroundImage: `url(${slides[currentSlide].img})` }}>
-      <button onClick={goLeft}>
+      <button onClick={goLeft} className='buttonsnextprev'>
         <img src="/left-arrow.png" alt="Go Left" />
       </button>
 
@@ -52,8 +52,8 @@ export default function HomeContent() {
           <button>SEE COLLECTION</button>
         </div>
       </div>
-
-      <button onClick={goRight} >
+      
+      <button onClick={goRight} className='buttonsnextprev'>
         <img src="/right-arrow.png" alt="Go Right" />
       </button>
     </div>
