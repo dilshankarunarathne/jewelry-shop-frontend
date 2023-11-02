@@ -31,7 +31,7 @@ export function Navbar() {
           </div>
         </div>
         <Link href="/AboutPage">ABOUT US</Link>
-        <Route path="/contact">
+        <Route path="/about" element={<AboutPage />} />
         <Link href="/contact">CONTACT US</Link>
       </div>
     </nav>
