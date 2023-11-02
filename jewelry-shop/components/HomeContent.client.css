@@ -30,8 +30,9 @@
 }
 
 .slide-content {
-    /* position: relative; */
+    position: relative;
     width: 50%;
+    z-index: 1;
     align-self: center;
     color: rgb(0, 0, 0); 
 }
