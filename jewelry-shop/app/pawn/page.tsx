@@ -1,6 +1,6 @@
 import { Navbar } from '../../components/Navbar' 
 
-
+import './pawn.css'
 
 export default function PawnPage() {
   return (
