@@ -1,7 +1,8 @@
 import Link from 'next/link';
-import { useRouter } from 'next/router'; 
+import 'next/navigation'; 
 
 import './Navbar.css'
+import '../app/AboutPage'
 
 interface NavigationProps {
   href: string;
@@ -15,11 +16,8 @@ function Navigation({ href, children }: NavigationProps) {
 }
 
 export function Navbar() {
-  const router = useRouter();
-
   const handleAboutPageClick = (event: React.MouseEvent) => {
     event.preventDefault();
-    router.push('/AboutPage'); 
   };
 
   return (
