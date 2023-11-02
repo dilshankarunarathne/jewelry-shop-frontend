@@ -18,17 +18,19 @@ export function Navbar() {
       <Link href="/">
         <img src="/path/to/logo.png" alt="Company Logo" className="logo" />
       </Link>
-      <Link href="/">HOME</Link>
-      <div className="dropdown">
-        <button className="dropbtn">PRODUCTS</button>
-        <div className="dropdown-content">
-          <Navigation href="/products/product1">Product 1</Navigation>
-          <Navigation href="/products/product2">Product 2</Navigation>
-          <Navigation href="/products/product3">Product 3</Navigation>
+      <div>
+        <Link href="/">HOME</Link>
+        <div className="dropdown">
+          <button className="dropbtn">PRODUCTS</button>
+          <div className="dropdown-content">
+            <Navigation href="/products/product1">Product 1</Navigation>
+            <Navigation href="/products/product2">Product 2</Navigation>
+            <Navigation href="/products/product3">Product 3</Navigation>
+          </div>
         </div>
+        <Link href="/about">ABOUT US</Link>
+        <Link href="/contact">CONTACT US</Link>
       </div>
-      <Link href="/about">ABOUT US</Link>
-      <Link href="/contact">CONTACT US</Link>
     </nav>
   );
 }
