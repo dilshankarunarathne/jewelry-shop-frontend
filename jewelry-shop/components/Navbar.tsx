@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import { useNavigation } from 'next/navigation'; 
+
 import './Navbar.css'
 
 interface NavigationProps {
