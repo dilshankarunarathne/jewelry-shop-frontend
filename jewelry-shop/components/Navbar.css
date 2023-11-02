@@ -6,7 +6,7 @@ nav {
     /* background-color: #FFFDCE; */
     color: black;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     background-color: transparent;
     padding: 15px;
@@ -19,6 +19,10 @@ nav a, .dropdown {
 
 .logo {
     height: 50px; 
+}
+
+.first-link {
+    margin-left: auto;
 }
 
 .links {
