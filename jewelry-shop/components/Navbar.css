@@ -1,5 +1,6 @@
 body {
     background-color: #FFFDCE !important;
+    font-size: 25;
 }
 
 nav {
@@ -11,6 +12,7 @@ nav {
     background-color: transparent;
     padding: 10px;
     padding-right: 40px;
+    
 }
 
 nav a, .dropdown {
