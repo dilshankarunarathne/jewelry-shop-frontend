@@ -11,7 +11,7 @@ const slides = [
   },
   { 
     img: '/path/to/image2.jpg', 
-
+    heading: "",
     description: 'Description 2' 
   },
   { 
