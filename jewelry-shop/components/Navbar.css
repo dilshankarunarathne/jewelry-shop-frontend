@@ -14,7 +14,7 @@ nav {
     padding-right: 40px;
 }
 
-dropdown-content, nav {
+.dropdown-content, nav {
     font-size: 20px;
 }
 
