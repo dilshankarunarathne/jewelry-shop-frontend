@@ -11,3 +11,7 @@
 .slide p {
     margin-left: 10px;
 }
+
+button img {
+    width: 20px; 
+}
