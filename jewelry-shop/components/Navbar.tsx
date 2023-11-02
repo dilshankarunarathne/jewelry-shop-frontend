@@ -20,7 +20,7 @@ export function Navbar() {
     event.preventDefault();
     router.push('/AboutPage');
   };
-  
+
   return (
     <nav>
       <Link href="/">
@@ -36,7 +36,7 @@ export function Navbar() {
             <Navigation href="/products/product3">Product 3</Navigation>
           </div>
         </div>
-        <Link href="/AboutPage">ABOUT US</Link>
+        <Link href="/AboutPage" onClick={handleAboutPageClick}>ABOUT US</Link>
         <Link href="/contact">CONTACT US</Link>
       </div>
     </nav>
