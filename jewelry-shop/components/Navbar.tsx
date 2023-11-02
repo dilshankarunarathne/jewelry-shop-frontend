@@ -16,7 +16,7 @@ export function Navbar() {
   return (
     <nav>
       <Link href="/">
-        <img src="/path/to/logo.png" alt="Company Logo" className="logo" />
+        <img src="/path/to/logo.png" alt="Shop Logo" className="logo" />
       </Link>
       <div>
         <Link href="/">HOME</Link>
