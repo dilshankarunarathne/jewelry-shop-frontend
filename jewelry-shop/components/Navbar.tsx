@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import './Navbar.css'
+import { useRouter } from 'next/router';
 
 interface NavigationProps {
   href: string;
