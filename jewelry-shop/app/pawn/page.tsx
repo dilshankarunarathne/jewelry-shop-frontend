@@ -11,7 +11,7 @@ export default function PawnPage() {
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod</p>
         </div>
         <div>
-            <button>SEE COLLECTION</button>
+            <button>DISCOVER MORE</button>
         </div>
 
       </div>
