@@ -15,7 +15,7 @@
 }
 
 .buttonsnextprev {
-    
+    z-index: 2;
 }
 
 .slide {
