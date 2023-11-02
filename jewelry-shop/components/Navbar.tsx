@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { useNavigation } from 'next/navigation'; 
+import { useRouter } from 'next/router'; 
 
 import './Navbar.css'
 
@@ -16,7 +16,7 @@ function Navigation({ href, children }: NavigationProps) {
 
 export function Navbar() {
   const navigation = useNavigation();
-  
+
   return (
     <nav>
       <Link href="/">
