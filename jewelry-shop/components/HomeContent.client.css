@@ -1,42 +1,40 @@
-
-
 .slider {
     position: fixed;
-    z-index: -1;
+    z-index: 1;
     top: 0;
     left: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: 100vh; 
-    background-size: 50% 100%; 
+    height: 100vh; /* 100% of the viewport height */
+    background-size: 50% 100%; /* 50% width and 100% height */
     background-repeat: no-repeat;
     background-position: left center;
-    pointer-events: none;
+    pointer-events: none; /* Prevent the .slider div from receiving pointer events */
 }
 
 .slide {
-  position: relative;
-  width: 100%;
-  height: 100%; 
-  display: flex;
-  justify-content: flex-end;
+position: relative;
+width: 100%;
+height: 100%; /* 100% of the parent's height */
+display: flex;
+justify-content: flex-end;
 }
 
 .slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+width: 100%;
+height: 100%;
+object-fit: cover;
 }
 
 .slide-content {
-    position: relative;
-    width: 50%;
-    z-index: 1;
-    align-self: center;
-    color: rgb(0, 0, 0); 
-    pointer-events: auto; 
+position: relative;
+width: 50%;
+z-index: 1;
+align-self: center;
+color: rgb(0, 0, 0); 
+pointer-events: auto; /* Allow the .slide-content div to receive pointer events */
 }
 
 .slide img {
