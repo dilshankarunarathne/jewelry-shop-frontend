@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import './Navbar.css'
 
 interface NavigationProps {
   href: string;
