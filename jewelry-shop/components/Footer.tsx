@@ -4,8 +4,8 @@ import React from 'react';
 const Footer = () => {
   return (
     <footer>
-      <p>Developed by Altier Tech </p>
-      <p>Email: john.doe@example.com</p>
+      <p>Developed by Altier Tech ©</p>
+      <p>ceo@altier.tech</p>
     </footer>
   );
 };
