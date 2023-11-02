@@ -16,6 +16,10 @@ nav a, .dropdown {
     padding: 40px;
 }
 
+.logo {
+    height: 50px; 
+}
+
 /* Dropdown Button */
 .dropbtn {
     background-color: #FFFDCE;
