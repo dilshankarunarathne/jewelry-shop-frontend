@@ -17,7 +17,7 @@ const slides = [
   { 
     img: '/path/to/image3.jpg', 
     heading: "Be Unique",
-    description: '' 
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' 
   }
 ];
 
