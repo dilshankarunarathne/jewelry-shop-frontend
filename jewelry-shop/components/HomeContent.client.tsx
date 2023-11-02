@@ -29,7 +29,7 @@ export default function HomeContent() {
   return (
     <div className="slider">
       <button onClick={goLeft}>
-        Go Left
+        <img src="/public/left-arrow.png" alt="Go Left" />
       </button>
       <div className="slide">
         <img src={slides[currentSlide].img} alt="Slide" />
