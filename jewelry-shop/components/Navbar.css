@@ -16,6 +16,7 @@ nav {
 
 .dropdbtn, nav {
     font-size: 20px;
+    font-weight: 500;
 }
 
 nav a, .dropdown {
