@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import './Navbar.css'
-import { Route } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import AboutPage from '../app/AboutPage'
 
 interface NavigationProps {
@@ -33,7 +33,9 @@ export function Navbar() {
           </div>
         </div>
         <Link href="/AboutPage">ABOUT US</Link>
+        <Routes>
         <Route path="/about" element={<AboutPage />} />
+        </Routes>
         <Link href="/contact">CONTACT US</Link>
       </div>
     </nav>
