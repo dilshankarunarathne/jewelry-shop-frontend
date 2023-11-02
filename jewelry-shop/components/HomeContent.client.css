@@ -57,7 +57,7 @@
 }
 
 .slide-content button {
-    border: 2px solid #FFE55E; 
+    border: 2px solid; 
     padding: 10px;
     color: #FFE55E; 
 }
