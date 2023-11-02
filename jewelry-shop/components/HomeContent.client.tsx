@@ -36,7 +36,7 @@ export default function HomeContent() {
         <p>{slides[currentSlide].description}</p>
       </div>
       <button onClick={goRight}>
-        Go Right
+      <img src="/public/left-arrow.png" alt="Go Left" />
       </button>
     </div>
   );
