@@ -48,7 +48,7 @@ export default function HomeContent() {
         <div className="slide-content">
           <h1>{slides[currentSlide].heading}</h1>
           <p>{slides[currentSlide].description}</p>
-          <button>See Collection</button>
+          <button>SEE COLLECTION</button>
         </div>
       </div>
 
