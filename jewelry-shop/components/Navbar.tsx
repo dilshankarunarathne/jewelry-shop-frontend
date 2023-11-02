@@ -1,6 +1,19 @@
 import Link from 'next/link';
 
-export default function Navbar() {
+interface NavigationProps {
+  href: string;
+  children: React.ReactNode;
+}
+
+function Navigation({ href, children }: NavigationProps) {
+  return (
+    <Link href={href}>
+      <a>{children}</a>
+    </Link>
+  );
+}
+
+export function Navbar() {
   return (
     <nav>
       <Link href="/">HOME</Link>
