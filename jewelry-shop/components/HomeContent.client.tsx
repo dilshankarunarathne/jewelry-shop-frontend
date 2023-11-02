@@ -38,7 +38,7 @@ export default function HomeContent() {
       </div>
 
       <button onClick={goRight}>
-        <img src="/public/right-arrow.png" alt="Go Right" />
+        <img src="/right-arrow.png" alt="Go Right" />
       </button>
     </div>
   );
