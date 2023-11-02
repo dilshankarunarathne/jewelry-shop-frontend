@@ -1,5 +1,9 @@
+body {
+    background-color: #FFFDCE !important;
+}
+
 nav {
-    background-color: #FFFDCE;
+    /* background-color: #FFFDCE; */
     color: black;
     display: flex;
     justify-content: flex-end;
