@@ -30,10 +30,6 @@ export function Navbar() {
         </div>
         <Link href="/about">ABOUT US</Link>
         <Link href="/contact">CONTACT US</Link>
-
-        <button onClick={toggleTheme}>
-          Switch to {theme === 'light' ? 'dark' : 'light'} mode
-        </button>
       </div>
     </nav>
   );
