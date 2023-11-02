@@ -15,6 +15,11 @@ function Navigation({ href, children }: NavigationProps) {
 export function Navbar() {
   return (
     <nav>
+      <Link href="/">
+        <a>
+          <img src="/path/to/logo.png" alt="Company Logo" className="logo" />
+        </a>
+      </Link>
       <Link href="/">HOME</Link>
       <div className="dropdown">
         <button className="dropbtn">PRODUCTS</button>
