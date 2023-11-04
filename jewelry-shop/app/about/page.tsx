@@ -1,10 +1,11 @@
 import { Navbar } from '../../components/Navbar' 
 
-import './about.css'
-
 export default function AboutPage() {
   return (
-    <main className="gradient-background">
+    <main style={{
+      background: 'linear-gradient(to right, transparent, #FFFDCE)',
+      minHeight: '100vh'
+    }}>
       <div className="AboutPage">
         <Navbar />
         <h1>About</h1>
