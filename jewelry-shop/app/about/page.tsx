@@ -1,6 +1,6 @@
 import { Navbar } from '../../components/Navbar' 
 
-
+import './about.css'
 
 export default function AboutPage() {
   return (
