@@ -14,5 +14,6 @@ p {
 
 .topic {
     display: 'flex';
-    justifyContent: 'center', alignItems: 'center', height: '100vh'
+    justifyContent: 'center'; 
+    alignItems: 'center', height: '100vh'
 }
