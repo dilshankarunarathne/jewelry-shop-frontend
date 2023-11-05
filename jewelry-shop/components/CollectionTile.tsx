@@ -8,4 +8,4 @@ const CollectionTile = () => {
   );
 };
 
-export default Footer;
+export default CollectionTile;
