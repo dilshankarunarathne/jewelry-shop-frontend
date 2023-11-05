@@ -27,7 +27,7 @@ export function Navbar() {
             <Navigation href="/products/product1">Product 1</Navigation>
             <Navigation href="/products/product2">Product 2</Navigation>
             {/* <Navigation href="/products/">All Products</Navigation> */}
-            
+            <Link href="/products">All Products</Link>
           </div>
         </div>
         <Link href="/about">ABOUT US</Link>
