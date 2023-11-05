@@ -6,7 +6,7 @@ export default function AboutPage() {
       <div className="AboutPage">
         <Navbar />
         <h1>Latest Collection</h1>
-        <p></p>
+        <p>try our </p>
       </div>
     </main>
   )
