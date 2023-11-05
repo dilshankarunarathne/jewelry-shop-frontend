@@ -1,6 +1,6 @@
 import { Navbar } from '../../components/Navbar' 
 
-import './page.css'
+import './products.css'
 
 export default function ProductsPage() {
   return (
