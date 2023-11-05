@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './HomeContent.client.css'; 
 
 const slides = [
@@ -38,6 +38,14 @@ export default function HomeContent() {
     console.log('goRight');
     setCurrentSlide((oldSlide) => (oldSlide + 1) % slides.length);
   };
+
+  useEffect(() => {
+    const slideInterval = setInterval(nextSlide, 5000);
+  
+    return () => {
+      clearInterval(slideInterval);
+    };
+  }, []);
 
   return (
     <div className="slider" style={{ backgroundImage: `url(${slides[currentSlide].img})` }}>
