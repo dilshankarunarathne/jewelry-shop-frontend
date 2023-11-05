@@ -11,8 +11,8 @@ export default function ProductsPage() {
             <h1>Latest Collection</h1>
             <p>try our best collection of rings and necklace</p>
 
-            <div>
-              
+            <div className=''>
+
             </div>
         </div>
       </div>
