@@ -13,7 +13,7 @@ const CollectionTile: React.FC<CollectionTileProps> = ({ name, image, onButtonCl
         <img src={image} alt={name} />
         <button onClick={onButtonClick}>SEE COLLECTION</button>
         </div>
-  );
+    );
 };
 
 export default CollectionTile;
