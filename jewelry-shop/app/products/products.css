@@ -15,6 +15,12 @@ p {
     color: black !important;
 }
 
+.category-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .categoryTab {
     margin: auto 0;
     padding: 10px;
