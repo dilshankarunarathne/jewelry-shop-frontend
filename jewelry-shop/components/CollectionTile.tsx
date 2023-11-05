@@ -6,8 +6,8 @@ interface CollectionTileProps {
     onButtonClick: () => void;
 }
 
-const CollectionTile = () => {
-  return (
+const CollectionTile: React.FC<CollectionTileProps> = ({ name, image, onButtonClick }) => {
+    return (
     <div className="collection-tile">
       <h2>{name}</h2>
       <img src={image} alt={name} />
