@@ -5,7 +5,7 @@ export default function AboutPage() {
     <main>
       <div className="AboutPage">
         <Navbar />
-        <h1>About</h1>
+        <h1>Latest Collection</h1>
       </div>
     </main>
   )
