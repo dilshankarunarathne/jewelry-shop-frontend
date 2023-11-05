@@ -5,6 +5,8 @@ body {
 h1 {
     text-align: center;
     color: black;
+    position: relative;
+    bottom: 20px;
 }
 
 p {
@@ -17,4 +19,6 @@ p {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    flex-direction: row;
+    gap: 20px;
 }
