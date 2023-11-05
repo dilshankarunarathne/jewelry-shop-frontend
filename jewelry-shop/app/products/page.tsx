@@ -36,7 +36,9 @@ export default function ProductsPage() {
                 }
                 {
                   selectedTab === 'new' && 
-                  <div>New jewelry content</div>
+                  <div>
+                    
+                  </div>
                 }
             </div>
         </div>
