@@ -16,7 +16,6 @@ p {
 }
 
 .categoryTab {
-    display: flex;
     margin: auto 0;
     padding: 10px;
 }
