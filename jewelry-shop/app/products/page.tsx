@@ -7,7 +7,6 @@ import './products.css'
 export default function ProductsPage() {
   const [selectedTab, setSelectedTab] = useState('all');
 
-  
   return (
     <main>
       <div className="ProductsPage">
