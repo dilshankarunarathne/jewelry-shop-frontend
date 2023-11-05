@@ -1,6 +1,6 @@
 import { Navbar } from '../../components/Navbar' 
 
-export default function AboutPage() {
+export default function ProductsPage() {
   return (
     <main>
       <div className="ProductsPage">
