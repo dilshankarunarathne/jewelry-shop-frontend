@@ -8,9 +8,11 @@ interface CollectionTileProps {
 
 const CollectionTile = () => {
   return (
-    <main>
-
-    </main>
+    <div className="collection-tile">
+      <h2>{name}</h2>
+      <img src={image} alt={name} />
+      <button onClick={onButtonClick}>SEE COLLECTION</button>
+    </div>
   );
 };
 
