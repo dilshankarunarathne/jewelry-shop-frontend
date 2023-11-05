@@ -3,6 +3,7 @@
 import { useState } from 'react';
 
 import { Navbar } from '../../components/Navbar' 
+import CollectionTile from '@/components/CollectionTile';
 
 import './products.css'
 
