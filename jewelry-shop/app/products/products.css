@@ -19,6 +19,7 @@ p {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap; 
+    padding: auto;
 }
 
 .topic {
