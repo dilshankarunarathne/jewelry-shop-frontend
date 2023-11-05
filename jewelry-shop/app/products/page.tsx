@@ -36,9 +36,9 @@ export default function ProductsPage() {
                   selectedTab === 'best seller' && 
                   <div>
                     <CollectionTile name="Product 5" image="image5.jpg" onButtonClick={() => {}} />
-                <CollectionTile name="Product 6" image="image6.jpg" onButtonClick={() => {}} />
-                <CollectionTile name="Product 7" image="image7.jpg" onButtonClick={() => {}} />
-                <CollectionTile name="Product 8" image="image8.jpg" onButtonClick={() => {}} />
+                    <CollectionTile name="Product 6" image="image6.jpg" onButtonClick={() => {}} />
+                    <CollectionTile name="Product 7" image="image7.jpg" onButtonClick={() => {}} />
+                    <CollectionTile name="Product 8" image="image8.jpg" onButtonClick={() => {}} />
                   </div>
                 }
                 {
