@@ -9,7 +9,6 @@ export default function ProductsPage() {
         <Navbar />
         <div className='topic'>
             <h1>Latest Collection</h1>
-            <br />
             <p>try our best collection of rings and necklace</p>
         </div>
       </div>
