@@ -10,6 +10,10 @@ export default function ProductsPage() {
         <div className='topic'>
             <h1>Latest Collection</h1>
             <p>try our best collection of rings and necklace</p>
+
+            <div>
+              
+            </div>
         </div>
       </div>
     </main>
