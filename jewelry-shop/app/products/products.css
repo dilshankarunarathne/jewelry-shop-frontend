@@ -16,6 +16,7 @@ p {
 }
 
 .categoryTab {
+    align-items: center;
     margin: auto 0;
     padding: 10px;
 }
