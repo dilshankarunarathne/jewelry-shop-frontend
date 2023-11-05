@@ -29,7 +29,8 @@ export default function ProductsPage() {
                 selectedTab === 'best seller' && <div>Best seller jewelry content</div>
                 }
                 {
-                selectedTab === 'new' && <div>New jewelry content</div>}
+                selectedTab === 'new' && <div>New jewelry content</div>
+                }
             </div>
         </div>
       </div>
