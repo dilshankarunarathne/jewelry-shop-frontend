@@ -39,7 +39,7 @@ export default function HomeContent() {
   };
 
   useEffect(() => {
-    const slideInterval = setInterval(nextSlide, 5000);
+    const slideInterval = setInterval(goRight, 5000);
   
     return () => {
       clearInterval(slideInterval);
