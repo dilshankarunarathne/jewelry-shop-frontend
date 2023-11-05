@@ -16,7 +16,7 @@ export default function ProductsPage() {
         <Navbar />
         <div className='topic'>
             <h1>Latest Collection</h1>
-            <p>try our best collection of rings and necklace</p>
+            <p class="intro-text">try our best collection of rings and necklace</p>
 
             <div className='categories'>
                 <button onClick={() => setSelectedTab('all')}>All</button>
