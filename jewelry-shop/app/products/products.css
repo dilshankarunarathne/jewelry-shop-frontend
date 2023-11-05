@@ -7,6 +7,7 @@ h1 {
     color: black;
     position: relative;
     bottom: 20px;
+    font-size: 40px;
 }
 
 p {
@@ -20,5 +21,4 @@ p {
     align-items: center;
     height: 100vh;
     flex-direction: column;
-    gap: 20px;
 }
