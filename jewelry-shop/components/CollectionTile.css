@@ -3,4 +3,13 @@
     margin: 20px;
 }
 
+.tile {
+    border: 1px solid #000;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
 
+.tile:hover {
+    transform: scale(1.05);
+    z-index: 1;
+}
