@@ -22,3 +22,7 @@ p {
     height: 100vh;
     flex-direction: column;
 }
+
+.intro-text {
+    margin-bottom: 20px; /* Adjust as needed */
+}
