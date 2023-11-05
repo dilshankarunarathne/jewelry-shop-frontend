@@ -19,7 +19,7 @@ export default function ProductsPage() {
             <p className="intro-text">try our best collection of rings and necklace</p>
 
             <div className='categories'>
-                <div class="category-buttons">
+                <div className="category-buttons">
                   <button className='categoryTab' onClick={() => setSelectedTab('all')}>All</button>
                   <button className='categoryTab' onClick={() => setSelectedTab('best seller')}>Best Seller</button>
                   <button className='categoryTab' onClick={() => setSelectedTab('new')}>New</button>
