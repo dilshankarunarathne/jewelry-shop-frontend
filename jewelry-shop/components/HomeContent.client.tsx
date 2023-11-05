@@ -35,7 +35,6 @@ export default function HomeContent() {
   };
 
   const goRight = () => {
-    console.log('goRight');
     setCurrentSlide((oldSlide) => (oldSlide + 1) % slides.length);
   };
 
