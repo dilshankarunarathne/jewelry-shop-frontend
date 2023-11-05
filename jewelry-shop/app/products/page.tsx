@@ -23,7 +23,8 @@ export default function ProductsPage() {
                 <button onClick={() => setSelectedTab('new')}>New</button>
 
                 {
-                  selectedTab === 'all' && <div>All jewelry content</div>
+                  selectedTab === 'all' && 
+                  <div>All jewelry content</div>
                 }
                 {
                   selectedTab === 'best seller' && <div>Best seller jewelry content</div>
