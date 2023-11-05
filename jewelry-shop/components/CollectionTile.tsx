@@ -1,4 +1,5 @@
 import React from 'react';
+import './CollectionTile.css';
 
 interface CollectionTileProps {
     name: string;
