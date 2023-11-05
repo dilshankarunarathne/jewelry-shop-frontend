@@ -26,7 +26,7 @@ export function Navbar() {
           <div className="dropdown-content">
             <Navigation href="/products/product1">Product 1</Navigation>
             <Navigation href="/products/product2">Product 2</Navigation>
-            <Navigation href="/products/">All Products</Navigation>
+            {/* <Navigation href="/products/">All Products</Navigation> */}
           </div>
         </div>
         <Link href="/about">ABOUT US</Link>
