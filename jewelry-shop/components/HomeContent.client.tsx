@@ -63,6 +63,16 @@ export default function HomeContent() {
       <button onClick={goRight} className='buttonsnextprev'>
         <img src="/right-arrow.png" alt="Go Right" />
       </button>
+
+      <div className="dots">
+        {slides.map((slide, index) => (
+          <span 
+            key={index} 
+            className={`dot ${currentSlide === index ? 'active' : ''}`} 
+            onClick={() => setCurrentSlide(index)}
+          />
+        ))}
+      </div>
     </div>
   );
 }
