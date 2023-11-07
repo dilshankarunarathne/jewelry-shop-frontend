@@ -22,25 +22,25 @@
     display: flex;
     justify-content: center;
     margin-top: 20px;
-  }
-  
-  .dot {
-    height: 20px;
-    width: 20px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-    margin-right: 10px;
-  }
-  
-  .dot.active {
-    background-color: #717171;
-  }
+}
 
-  .dot:last-child {
-    margin-right: 0;
-  }
+.dot {
+height: 20px;
+width: 20px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+margin-right: 10px;
+}
+
+.dot.active {
+background-color: #717171;
+}
+
+.dot:last-child {
+margin-right: 0;
+}
 
 .slide {
     position: relative;
