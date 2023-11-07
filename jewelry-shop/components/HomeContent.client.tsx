@@ -66,13 +66,13 @@ export default function HomeContent() {
     </div>
 
     <div className="dots">
-    {slides.map((slide, index) => (
-      <span 
-        key={index} 
-        className={`dot ${currentSlide === index ? 'active' : ''}`} 
-        onClick={() => setCurrentSlide(index)}
-      />
-    ))}
+      {slides.map((slide, index) => (
+        <span 
+          key={index} 
+          className={`dot ${currentSlide === index ? 'active' : ''}`} 
+          onClick={() => setCurrentSlide(index)}
+        />
+      ))}
     </div>
   );
 }
