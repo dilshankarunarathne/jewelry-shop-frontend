@@ -38,6 +38,10 @@
     background-color: #717171;
   }
 
+  .dot:last-child {
+    margin-right: 0;
+  }
+
 .slide {
     position: relative;
     width: 100%;
