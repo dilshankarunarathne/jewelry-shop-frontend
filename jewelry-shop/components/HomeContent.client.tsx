@@ -48,33 +48,33 @@ export default function HomeContent() {
 
   return (
     <div>
-    <div className="slider" style={{ backgroundImage: `url(${slides[currentSlide].img})` }}>
-      <button onClick={goLeft} className='buttonsnextprev'>
-        <img src="/left-arrow.png" alt="Go Left" />
-      </button>
+      <div className="slider" style={{ backgroundImage: `url(${slides[currentSlide].img})` }}>
+        <button onClick={goLeft} className='buttonsnextprev'>
+          <img src="/left-arrow.png" alt="Go Left" />
+        </button>
 
-      <div className="slide">
-        <div className="slide-content">
-          <h1>{slides[currentSlide].heading}</h1>
-          <p>{slides[currentSlide].description}</p>
-          <button>SEE COLLECTION</button>
+        <div className="slide">
+          <div className="slide-content">
+            <h1>{slides[currentSlide].heading}</h1>
+            <p>{slides[currentSlide].description}</p>
+            <button>SEE COLLECTION</button>
+          </div>
         </div>
+        
+        <button onClick={goRight} className='buttonsnextprev'>
+          <img src="/right-arrow.png" alt="Go Right" />
+        </button>
       </div>
-      
-      <button onClick={goRight} className='buttonsnextprev'>
-        <img src="/right-arrow.png" alt="Go Right" />
-      </button>
-    </div>
 
-    <div className="dots">
-      {slides.map((slide, index) => (
-        <span 
-          key={index} 
-          className={`dot ${currentSlide === index ? 'active' : ''}`} 
-          onClick={() => setCurrentSlide(index)}
-        />
-      ))}
-    </div>
+      <div className="dots">
+        {slides.map((slide, index) => (
+          <span 
+            key={index} 
+            className={`dot ${currentSlide === index ? 'active' : ''}`} 
+            onClick={() => setCurrentSlide(index)}
+          />
+        ))}
+      </div>
     </div>
   );
 }
