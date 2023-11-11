@@ -1,7 +1,11 @@
 "use client"
 
 import { useState, useEffect } from 'react';
-import './HomeContent.client.css'; 
+// import './HomeContent.client.css'; 
+import { Box, Button, IconButton, Typography } from '@material-ui/core';
+import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
+import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
+
 
 const slides = [
   { 
