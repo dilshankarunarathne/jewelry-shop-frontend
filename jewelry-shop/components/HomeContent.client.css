@@ -59,9 +59,11 @@
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    position: fixed;
+    position: absolute;
+    transform: translateX(-50%);
     bottom: 0;
-    left: 0;
+    margin-bottom: 20px;
+    left: 50%;
     width: 100%;
 }
 
