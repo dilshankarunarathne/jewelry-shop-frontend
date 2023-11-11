@@ -1,10 +1,9 @@
 body {
     background-color: #FFFDCE !important;
-    font-size: 25;
+    font-size: 25px;
 }
 
 nav {
-    /* background-color: #FFFDCE; */
     color: black;
     display: flex;
     justify-content: space-between; 
@@ -14,14 +13,18 @@ nav {
     padding-right: 40px;
 }
 
-.dropdbtn, nav {
-    font-size: 20px;
-    font-weight: 500;
-}
-
-nav a, .dropdown {
+nav a {
     padding: 20px;
     padding-right: 50px;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navbar.css */
+.navbar-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .logo {
@@ -41,10 +44,7 @@ nav a, .dropdown {
 
 /* Dropdown Button */
 .dropbtn {
-    /* background-color: #FFFDCE; */
     color: black;
-    /* padding: 16px; */
-    /* font-size: 20px; */
     border: none;
 }
 
