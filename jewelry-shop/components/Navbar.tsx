@@ -1,3 +1,6 @@
+"use client"
+
+import { useState } from 'react';
 import Link from 'next/link';
 
 import './Navbar.css'
@@ -14,8 +17,15 @@ function Navigation({ href, children }: NavigationProps) {
 }
 
 export function Navbar() {
+  const [isActive, setIsActive] = useState(false);
+
+  const toggleActive = () => {
+    setIsActive(!isActive);
+  };
+
   return (
-    <nav>
+    <nav className={isActive ? 'active' : ''}>
+      <button onClick={toggleActive} className="menu-button">Menu</button>
       <Link href="/">
         <img src="/path/to/logo.png" alt="Shop Logo" className="logo" />
       </Link>
@@ -26,7 +36,6 @@ export function Navbar() {
           <div className="dropdown-content">
             <Navigation href="/products/product1">Product 1</Navigation>
             <Navigation href="/products/product2">Product 2</Navigation>
-            {/* <Navigation href="/products/">All Products</Navigation> */}
             <Link href="/products">All Products</Link>
           </div>
         </div>
