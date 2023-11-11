@@ -6,7 +6,7 @@ import { Box, Button, IconButton, Typography } from '@material-ui/core';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 
-// import './HomeContent.client.css'; 
+import './HomeContent.client.css'; 
 
 const slides = [
   { 
@@ -52,34 +52,32 @@ export default function HomeContent() {
   }, []);
 
   return (
-    <div>
-      <div className="slider" style={{ backgroundImage: `url(${slides[currentSlide].img})` }}>
-        <button onClick={goLeft} className='buttonsnextprev'>
-          <img src="/left-arrow.png" alt="Go Left" />
-        </button>
+    <Box position="relative" className="slider" style={{ backgroundImage: `url(${slides[currentSlide].img})` }}>
+    <IconButton onClick={goLeft} className='buttonsnextprev' style={{ position: 'absolute', left: 0, top: '50%', transform: 'translateY(-50%)' }}>
+      <ArrowBackIosIcon />
+    </IconButton>
 
-        <div className="slide">
-          <div className="slide-content">
-            <h1>{slides[currentSlide].heading}</h1>
-            <p>{slides[currentSlide].description}</p>
-            <button>SEE COLLECTION</button>
-          </div>
-        </div>
-        
-        <button onClick={goRight} className='buttonsnextprev'>
-          <img src="/right-arrow.png" alt="Go Right" />
-        </button>
-      </div>
+    <Box className="slide">
+      <Box className="slide-content">
+      <Typography variant="h1" style={{ color: 'black' }}>{slides[currentSlide].heading}</Typography>
+      <Typography variant="body1" style={{ color: 'black' }}>{slides[currentSlide].description}</Typography>
+      <Button variant="contained">SEE COLLECTION</Button>
+      </Box>
+    </Box>
+    
+    <IconButton onClick={goRight} className='buttonsnextprev' style={{ position: 'absolute', right: 0, top: '50%', transform: 'translateY(-50%)' }}>
+      <ArrowForwardIosIcon />
+    </IconButton>
 
-      <div className="dots">
-        {slides.map((slide, index) => (
-          <span 
-            key={index} 
-            className={`dot ${currentSlide === index ? 'active' : ''}`} 
-            onClick={() => setCurrentSlide(index)}
-          />
-        ))}
-      </div>
-    </div>
+    <Box className="dots">
+      {slides.map((slide, index) => (
+        <span 
+          key={index} 
+          className={`dot ${currentSlide === index ? 'active' : ''}`} 
+          onClick={() => setCurrentSlide(index)}
+        />
+      ))}
+    </Box>
+  </Box>
   );
 }
