@@ -81,7 +81,6 @@
     background-color: #717171;
 }
 
-
 @media (max-width: 768px) {
     .slider {
         background-size: 100% 50%;
@@ -93,14 +92,5 @@
 
     .dots {
         bottom: 20px;
-    }
-
-    .navbar {
-        position: fixed;
-        left: 0;
-        top: 0;
-        height: 100%;
-        width: 80%; 
-        flex-direction: column;
     }
 }
