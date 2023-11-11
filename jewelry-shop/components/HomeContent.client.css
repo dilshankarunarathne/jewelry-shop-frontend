@@ -14,7 +14,7 @@
     background: #FFE55E;
     font-family: 'Inria Sans';
     color: black;
-    margin-top: 20px; /* Adjust this value as needed */
+    margin-top: 20px; 
 }
 
 .slide-content h1 {
@@ -31,7 +31,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    color: #fff; /* Add this if you want the icons to be white */
+    color: #fff; 
 }
 
 .buttonsnextprev:first-child {
@@ -81,7 +81,7 @@
     background-color: #717171;
 }
 
-/* Media query for mobile devices */
+
 @media (max-width: 768px) {
     .slider {
         background-size: 100% 50%;
