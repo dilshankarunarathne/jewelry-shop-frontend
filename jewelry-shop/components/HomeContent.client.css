@@ -94,4 +94,13 @@
     .dots {
         bottom: 20px;
     }
+
+    .navbar {
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 80%; 
+        flex-direction: column;
+    }
 }
