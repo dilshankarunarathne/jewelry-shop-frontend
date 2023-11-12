@@ -27,16 +27,16 @@ const useStyles = makeStyles({
   },
   h1: {
     fontFamily: "'Gwendolyn', cursive",
-    fontSize: '100px',
+    fontSize: '90px',
     fontWeight: 200,
     lineHeight: '85px',
     letterSpacing: '0em',
     textAlign: 'left',
-    paddingBottom: '30px',
+    paddingBottom: '5px',
   },
   paragraph: {
     fontFamily: 'Inter',
-    fontSize: '25px',
+    fontSize: '23px',
     fontWeight: 80,
     lineHeight: '45px',
     letterSpacing: '0em',
@@ -54,7 +54,8 @@ const useStyles = makeStyles({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    height: '100vh', // This makes the box take up the full viewport height
+    height: '100vh',
+    transform: 'translateY(-10%)',
   },
 });
 
@@ -65,12 +66,14 @@ export default function AboutPage() {
     <Router>
         <Box className={classes.container}>
           <Navbar />
-          <Box className={classes.rightAlignBox}>
-            <Typography className={classes.h1} variant="h1">The Hallmark of Elegance</Typography>
-            <Typography className={classes.paragraph} variant="body1">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
-            </Typography>
-            <Button className={classes.button} variant="contained" color="primary">Discover More</Button>
+          <Box className={classes.parentBox}>
+            <Box className={classes.rightAlignBox}>
+              <Typography className={classes.h1} variant="h1">The Hallmark of Elegance</Typography>
+              <Typography className={classes.paragraph} variant="body1">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
+              </Typography>
+              <Button className={classes.button} variant="contained" color="primary">Discover More</Button>
+            </Box>
           </Box>
         </Box>
     </Router>
