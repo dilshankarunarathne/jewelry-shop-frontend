@@ -1,22 +1,46 @@
-import { Navbar } from '../../components/Navbar' 
+"use client"
 
-import './pawn.css'
+import { Navbar } from '../../components/Navbar';
+import { Button, Typography, Container, makeStyles, Box } from '@material-ui/core';
+import { BrowserRouter as Router } from 'react-router-dom';
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    marginTop: theme.spacing(4),
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    background: 'url("/rings-bg.png")',
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
+  },
+  button: {
+    margin: theme.spacing(3, 0, 2),
+    background: '#FFE55E',
+    fontFamily: 'Inria Sans',
+    color: 'black',
+    // fontWeight: 'bold',
+    marginTop: '23px',
+    textAlign: 'center',
+    padding: '6px 12px', 
+    width: '200px',
+  },
+}));
 
 export default function PawnPage() {
-  return (
-    <main>
-      <div className="PawnPage">
-        <Navbar />
-        <div>
-            <h1>40% Discount</h1>
-            <p>for all in every pawning of gold articles</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod</p>
-        </div>
-        <div>
-            <button>DISCOVER MORE</button>
-        </div>
+  const classes = useStyles();
 
-      </div>
-    </main>
-  )
+  return (
+    <Router>
+        <Navbar />
+        <Box className={classes.root}>
+        <Typography variant="h1">40% Discount</Typography>
+        <Typography variant="body1">for all in every pawning of gold articles</Typography>
+        <Typography variant="body1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod</Typography>
+        <Button variant="contained" color="primary" className={classes.button}>
+          DISCOVER MORE
+        </Button>
+        </Box>
+    </Router>
+  );
 }
