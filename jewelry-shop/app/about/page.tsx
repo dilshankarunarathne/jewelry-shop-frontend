@@ -30,6 +30,14 @@ const useStyles = makeStyles({
     letterSpacing: '0em',
     textAlign: 'left',
   },
+  paragraph: {
+    fontFamily: 'Inter',
+    fontSize: '30px',
+    fontWeight: 100,
+    lineHeight: '45px',
+    letterSpacing: '0em',
+    textAlign: 'center',
+  },
 });
 
 export default function AboutPage() {
@@ -41,7 +49,9 @@ export default function AboutPage() {
           <Navbar />
           <Box>
             <Typography className={classes.h1} variant="h1">The Hallmark of Elegance</Typography>
-            <Typography variant="body1">Your paragraph text here</Typography>
+            <Typography className={classes.paragraph} variant="body1">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
+            </Typography>
             <Button className={classes.button} variant="contained" color="primary">Discover More</Button>
           </Box>
         </Box>
