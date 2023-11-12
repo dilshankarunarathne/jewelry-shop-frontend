@@ -4,7 +4,7 @@ import { Navbar } from '../../components/Navbar';
 import { Button, Typography, Container, makeStyles, Box } from '@material-ui/core';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { CssBaseline } from '@material-ui/core';
-import "/pawn.css"
+import "./pawn.css"
 
 const useStyles = makeStyles((theme) => ({
   '@global': {
@@ -49,6 +49,10 @@ const useStyles = makeStyles((theme) => ({
 
   h1p2: {
   },
+  fullScreen: {
+    height: '100vh',
+    width: '100%',
+  }
 }));
 
 export default function PawnPage() {
@@ -56,19 +60,20 @@ export default function PawnPage() {
 
   return (
     <Router>      
-    <CssBaseline />
-      <Navbar />
-      <Box className={classes.root}>
-      <Typography className={classes.h1} variant="h1">40% Discount</Typography>
-      <Typography className={classes.subh} variant="body1">for all in every pawning of gold articles</Typography>
-      <Typography className={classes.text} variant="body1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod</Typography>
-      <Button variant="contained" color="primary" className={classes.button}>
-        DISCOVER MORE
-      </Button>
-      </Box>
-      <Box>
-        <Typography className={classes.h1p2} variant="h1">Our Services</Typography>
-      </Box>
+      <CssBaseline />
+        <Navbar />
+        <Box className={classes.root}>
+        <Typography className={classes.h1} variant="h1">40% Discount</Typography>
+        <Typography className={classes.subh} variant="body1">for all in every pawning of gold articles</Typography>
+        <Typography className={classes.text} variant="body1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod</Typography>
+        <Button variant="contained" color="primary" className={classes.button}>
+          DISCOVER MORE
+        </Button>
+        </Box>
+        <Box className={classes.fullScreen}>
+          <Typography className={classes.h1p2} variant="h1">Our Services</Typography>
+          {/* Add your new section content here */}
+        </Box>
   </Router>
   );
 }
