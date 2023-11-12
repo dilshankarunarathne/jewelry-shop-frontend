@@ -86,8 +86,14 @@ body {
     color: white;
 }
 
+@font-face {
+    font-family: 'Gwendolyn';
+    src: url('/Gwendolyn.ttf') format('truetype');
+}
+
 .sec3h {
     color: white;
+    font-family: 'Gwendolyn', cursive; 
 }
 
 .fullScreen {

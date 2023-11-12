@@ -6,7 +6,15 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { CssBaseline } from '@material-ui/core';
 import "./pawn.css"
 
+const useStyles = makeStyles({
+  sec3h: {
+    fontFamily: "'Gwendolyn', cursive",
+    color: 'White',
+  }
+});
+
 export default function PawnPage() {
+  const classes = useStyles();
   return (
     <Router>      
       <CssBaseline />
@@ -57,7 +65,7 @@ export default function PawnPage() {
       <Box className="fullScreen marginTop about">
         <Grid container alignItems="center" justify="space-around">
           <Grid item xs={6}>
-            <Typography variant="h1" align="center" className='sec3h'>
+            <Typography className={classes.sec3h} variant="h1" align="center">
               About Us
             </Typography>
           </Grid>
