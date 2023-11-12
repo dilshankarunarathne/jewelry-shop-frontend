@@ -6,7 +6,7 @@ import { Navbar } from '../../components/Navbar';
 
 const useStyles = makeStyles({
   container: {
-    background: 'linear-gradient(to right, transparent, #FFFDCE) !important',
+    background: 'none !important',
     minHeight: '100vh',
   },
 });
@@ -16,7 +16,7 @@ export default function AboutPage() {
 
   return (
     <Router>
-        <Box className="AboutPage">
+        <Box className={classes.container}>
           <Navbar />
           {/* Rest of your code */}
         </Box>
