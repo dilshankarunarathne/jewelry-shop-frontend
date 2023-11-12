@@ -14,7 +14,7 @@ body {
 }
 
 .tile:hover {
-    transform: scale(1.35);
+    transform: scale(1.25);
     z-index: 1;
 }
 
