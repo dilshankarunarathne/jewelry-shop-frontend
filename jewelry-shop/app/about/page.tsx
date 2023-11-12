@@ -38,7 +38,7 @@ export default function AboutPage() {
         <Box className={classes.container}>
           <Navbar />
           <Box>
-            <Typography variant="h1">The Hallmark of Elegance</Typography>
+            <Typography className={classes.h1} variant="h1">The Hallmark of Elegance</Typography>
             <Typography variant="body1">Your paragraph text here</Typography>
             <Button className={classes.button} variant="contained" color="primary">Discover More</Button>
           </Box>
