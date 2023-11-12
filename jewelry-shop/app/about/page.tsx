@@ -16,12 +16,10 @@ export default function AboutPage() {
 
   return (
     <Router>
-      <Container className={classes.container}>
         <Box className="AboutPage">
           <Navbar />
           {/* Rest of your code */}
         </Box>
-      </Container>
     </Router>
   );
 }
