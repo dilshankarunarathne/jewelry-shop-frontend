@@ -51,33 +51,42 @@ export default function HomeContent() {
     };
   }, []);
 
-  return (
-    <Box position="relative" className="slider" style={{ backgroundImage: `url(${slides[currentSlide].img})` }}>
-    <IconButton onClick={goLeft} className='buttonsnextprev' style={{ position: 'absolute', left: 0, top: '50%', transform: 'translateY(-50%)' }}>
-      <ArrowBackIosIcon />
-    </IconButton>
+  useEffect(() => {
+      document.body.style.backgroundImage = `url(${slides[currentSlide].img})`;
+      document.body.style.backgroundPosition = 'left';
+      document.body.style.backgroundRepeat = 'no-repeat';
+      document.body.style.backgroundSize = 'contain';
+      document.body.style.backgroundAttachment = 'fixed';
+      document.body.style.height = '100vh';
+  }, [currentSlide]);
 
-    <Box className="slide">
-      <Box className="slide-content">
-      <Typography variant="h1" style={{ color: 'black' }}>{slides[currentSlide].heading}</Typography>
-      <Typography variant="body1" style={{ color: 'black' }}>{slides[currentSlide].description}</Typography>
-      <Button variant="contained">SEE COLLECTION</Button>
+  return (
+    <Box position="relative" className="slider">
+      <IconButton onClick={goLeft} className='buttonsnextprev' style={{ position: 'absolute', left: 0, top: '50%', transform: 'translateY(-50%)' }}>
+        <ArrowBackIosIcon />
+      </IconButton>
+  
+      <Box className="slide">
+        <Box className="slide-content">
+          <Typography variant="h1" style={{ color: 'black' }}>{slides[currentSlide].heading}</Typography>
+          <Typography variant="body1" style={{ color: 'black' }}>{slides[currentSlide].description}</Typography>
+          <Button variant="contained">SEE COLLECTION</Button>
+        </Box>
+      </Box>
+      
+      <IconButton onClick={goRight} className='buttonsnextprev' style={{ position: 'absolute', right: 0, top: '50%', transform: 'translateY(-50%)' }}>
+        <ArrowForwardIosIcon />
+      </IconButton>
+  
+      <Box className="dots">
+        {slides.map((slide, index) => (
+          <span 
+            key={index} 
+            className={`dot ${currentSlide === index ? 'active' : ''}`} 
+            onClick={() => setCurrentSlide(index)}
+          />
+        ))}
       </Box>
     </Box>
-    
-    <IconButton onClick={goRight} className='buttonsnextprev' style={{ position: 'absolute', right: 0, top: '50%', transform: 'translateY(-50%)' }}>
-      <ArrowForwardIosIcon />
-    </IconButton>
-
-    <Box className="dots">
-      {slides.map((slide, index) => (
-        <span 
-          key={index} 
-          className={`dot ${currentSlide === index ? 'active' : ''}`} 
-          onClick={() => setCurrentSlide(index)}
-        />
-      ))}
-    </Box>
-  </Box>
   );
 }

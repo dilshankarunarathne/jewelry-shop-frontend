@@ -10,6 +10,15 @@
     background-position: left center;
 }
 
+body {
+    background-image: url('/background-women-1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
 .slide-content button {
     background: #FFE55E;
     font-family: 'Inria Sans';
