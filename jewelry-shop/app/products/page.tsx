@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 
 import { Navbar } from '../../components/Navbar' 
 import CollectionTile from '@/components/CollectionTile';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 import './products.css'
 
@@ -11,6 +12,7 @@ export default function ProductsPage() {
   const [selectedTab, setSelectedTab] = useState('all');
 
   return (
+    <Router>
     <main>
       <div className="ProductsPage">
         <Navbar />
@@ -55,5 +57,6 @@ export default function ProductsPage() {
         </div>
       </div>
     </main>
+    </Router>
   )
 }
