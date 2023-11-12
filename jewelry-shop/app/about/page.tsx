@@ -13,6 +13,12 @@ const useStyles = makeStyles({
     backgroundRepeat: 'no-repeat',
     minHeight: '100vh',
   },
+  button: {
+    background: '#FFE55E',
+    fontFamily: 'Inria Sans',
+    color: 'black',
+    marginTop: '20px',
+  },
 });
 
 export default function AboutPage() {
@@ -23,7 +29,9 @@ export default function AboutPage() {
         <Box className={classes.container}>
           <Navbar />
           <Box>
-            
+            <Typography variant="h1">Your Heading Here</Typography>
+            <Typography variant="body1">Your paragraph text here</Typography>
+            <Button className={classes.button} variant="contained" color="primary">Your Button Text</Button>
           </Box>
         </Box>
     </Router>
