@@ -69,7 +69,7 @@ export default function PawnPage() {
           <Box className="serviceBox">
             <Typography variant="h1">Service 1</Typography>
             <Typography className="sbp" variant="body1">
-              
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
             </Typography>
             <Button className="button" variant="contained" color="primary">Action</Button>
           </Box>
