@@ -23,3 +23,8 @@ body {
     padding: 10px;
     margin: auto;
 }
+
+.selected-tab {
+    font-weight: bold;
+    text-decoration: underline;
+}
