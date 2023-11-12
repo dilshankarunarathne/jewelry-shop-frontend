@@ -32,7 +32,7 @@ export default function AboutPage() {
           <Box>
             <Typography variant="h1">Your Heading Here</Typography>
             <Typography variant="body1">Your paragraph text here</Typography>
-            <Button className={classes.button} variant="contained" color="primary">Your Button Text</Button>
+            <Button className={classes.button} variant="contained" color="primary">Discover More</Button>
           </Box>
         </Box>
     </Router>
