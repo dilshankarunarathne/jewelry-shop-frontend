@@ -6,7 +6,7 @@ import { Navbar } from '../../components/Navbar';
 
 const useStyles = makeStyles({
   container: {
-    background: 'linear-gradient(to right, transparent, #FFFDCE), url("/couple.png")',
+    background: 'linear-gradient(90deg, rgba(2,0,36,0) 0%, rgba(255,253,206,1) 65%, rgba(255,253,206,1) 100%), url("/couple.png")',
     backgroundSize: 'contain',
     backgroundPosition: 'left bottom',
     backgroundRepeat: 'no-repeat',
