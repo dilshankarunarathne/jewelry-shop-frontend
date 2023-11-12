@@ -8,13 +8,15 @@ import { CssBaseline } from '@material-ui/core';
 const useStyles = makeStyles((theme) => ({
   '@global': {
     body: {
-      backgroundImage: 'url("/rings-bg.png")',
+      backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.76)), url("/rings-bg.png")',
       backgroundRepeat: 'no-repeat',
       backgroundSize: 'cover',
     },
   },
   h1: {
     color: 'white',
+    fontFamily: 'Gudea',
+    textShadow: '-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black',
   },
   root: {
     marginTop: theme.spacing(4),
@@ -33,6 +35,16 @@ const useStyles = makeStyles((theme) => ({
     padding: '6px 12px', 
     width: '200px',
   },
+  subh: {
+    color: 'white',
+    fontFamily: 'Inter',
+    textShadow: '-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black',
+  },
+  text: {
+    color: 'white',
+    fontFamily: 'Gudea',
+    textShadow: '-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black',
+  },
 }));
 
 export default function PawnPage() {
@@ -43,9 +55,9 @@ export default function PawnPage() {
       <CssBaseline />
         <Navbar />
         <Box className={classes.root}>
-        <Typography variant="h1">40% Discount</Typography>
-        <Typography variant="body1">for all in every pawning of gold articles</Typography>
-        <Typography variant="body1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod</Typography>
+        <Typography className={classes.h1} variant="h1">40% Discount</Typography>
+        <Typography className={classes.subh} variant="body1">for all in every pawning of gold articles</Typography>
+        <Typography className={classes.text} variant="body1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod</Typography>
         <Button variant="contained" color="primary" className={classes.button}>
           DISCOVER MORE
         </Button>
