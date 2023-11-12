@@ -17,7 +17,8 @@ const useStyles = makeStyles({
     background: '#FFE55E',
     fontFamily: 'Inria Sans',
     color: 'black',
-    marginTop: '20px',
+    // fontWeight: 'bold',
+    marginTop: '23px',
   },
 });
 
