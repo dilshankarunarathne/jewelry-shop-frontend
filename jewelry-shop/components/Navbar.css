@@ -36,7 +36,11 @@ nav a {
 }
 
 .productsbtn {
-    
+    font-size: 25px;
+    padding: 0px;
+    padding-right: 0px;
+    text-decoration: none;
+    color: inherit;
 }
 
 .links {
