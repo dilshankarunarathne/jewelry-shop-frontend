@@ -21,22 +21,40 @@ const useStyles = makeStyles({
     color: 'black',
     // fontWeight: 'bold',
     marginTop: '23px',
+    textAlign: 'center',
+    padding: '6px 12px', 
+    width: '200px',
   },
   h1: {
     fontFamily: "'Gwendolyn', cursive",
-    fontSize: '120px',
-    fontWeight: 400,
+    fontSize: '100px',
+    fontWeight: 200,
     lineHeight: '85px',
     letterSpacing: '0em',
     textAlign: 'left',
+    paddingBottom: '30px',
   },
   paragraph: {
     fontFamily: 'Inter',
-    fontSize: '30px',
-    fontWeight: 100,
+    fontSize: '25px',
+    fontWeight: 80,
     lineHeight: '45px',
     letterSpacing: '0em',
-    textAlign: 'center',
+    textAlign: 'justify',
+  },
+  rightAlignBox: {
+    display: 'flex',
+    flexDirection: 'column',
+    width: '60%',
+    paddingRight: '40px',
+    marginLeft: 'auto',
+    alignItems: 'center',
+  },
+  parentBox: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: '100vh', // This makes the box take up the full viewport height
   },
 });
 
@@ -47,7 +65,7 @@ export default function AboutPage() {
     <Router>
         <Box className={classes.container}>
           <Navbar />
-          <Box>
+          <Box className={classes.rightAlignBox}>
             <Typography className={classes.h1} variant="h1">The Hallmark of Elegance</Typography>
             <Typography className={classes.paragraph} variant="body1">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
