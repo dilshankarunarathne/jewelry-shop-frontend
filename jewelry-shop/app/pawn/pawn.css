@@ -63,7 +63,14 @@ body {
 }
 
 .btn {
-    
+    font-family: 'Inria Sans';
+    color: 'black';
+    /* fontWeight: 'bold'; */
+    margin-top: '23px';
+    text-align: 'center';
+    padding: '6px 12px';
+    width: '200px';
+    background: '#FFE55E' !important;
 }
 
 .sbp {
