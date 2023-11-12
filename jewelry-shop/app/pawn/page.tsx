@@ -45,6 +45,9 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: 'Gudea',
     textShadow: '-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black',
   },
+  
+  h1p2: {
+  },
 }));
 
 export default function PawnPage() {
@@ -52,16 +55,19 @@ export default function PawnPage() {
 
   return (
     <Router>      
-      <CssBaseline />
-        <Navbar />
-        <Box className={classes.root}>
-        <Typography className={classes.h1} variant="h1">40% Discount</Typography>
-        <Typography className={classes.subh} variant="body1">for all in every pawning of gold articles</Typography>
-        <Typography className={classes.text} variant="body1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod</Typography>
-        <Button variant="contained" color="primary" className={classes.button}>
-          DISCOVER MORE
-        </Button>
-        </Box>
-    </Router>
+    <CssBaseline />
+      <Navbar />
+      <Box className={classes.root}>
+      <Typography className={classes.h1} variant="h1">40% Discount</Typography>
+      <Typography className={classes.subh} variant="body1">for all in every pawning of gold articles</Typography>
+      <Typography className={classes.text} variant="body1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod</Typography>
+      <Button variant="contained" color="primary" className={classes.button}>
+        DISCOVER MORE
+      </Button>
+      </Box>
+      <Box>
+        <Typography className={classes.h1p2} variant="h1">Our Services</Typography>
+      </Box>
+  </Router>
   );
 }
