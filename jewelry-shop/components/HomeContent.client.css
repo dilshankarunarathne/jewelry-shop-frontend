@@ -34,6 +34,12 @@ body {
     letter-spacing: 0em;
     text-align: left;
     color: black;
+    width: 65%;
+}
+
+.slide-content p {
+    width: 65%;
+    text-align: justify;
 }
 
 .buttonsnextprev {
@@ -57,7 +63,7 @@ body {
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .slide-content {
