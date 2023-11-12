@@ -6,7 +6,10 @@ import { Navbar } from '../../components/Navbar';
 
 const useStyles = makeStyles({
   container: {
-    background: 'linear-gradient(to right, transparent, #FFFDCE) !important',
+    background: 'linear-gradient(to right, transparent, #FFFDCE), url("/couple.png")',
+    backgroundSize: 'contain',
+    backgroundPosition: 'left bottom',
+    backgroundRepeat: 'no-repeat',
     minHeight: '100vh',
   },
 });
