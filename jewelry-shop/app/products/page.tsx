@@ -44,10 +44,10 @@ export default function ProductsPage() {
                 {
                   selectedTab === 'all' && 
                   <div className='product-tiles'>
-                    <CollectionTile name="Product 1" image="image1.png" onButtonClick={() => {}} />
-                    <CollectionTile name="Product 2" image="image2.png" onButtonClick={() => {}} />
-                    <CollectionTile name="Product 3" image="image3.png" onButtonClick={() => {}} />
-                    <CollectionTile name="Product 4" image="image4.png" onButtonClick={() => {}} />
+                    <CollectionTile name="New Women Ring" image="image1.png" onButtonClick={() => {}} />
+                    <CollectionTile name="New Wedding Ring" image="image2.png" onButtonClick={() => {}} />
+                    <CollectionTile name="New Men Ring" image="image3.png" onButtonClick={() => {}} />
+                    <CollectionTile name="New Necklace" image="image4.png" onButtonClick={() => {}} />
                   </div>
                 }
                 {
