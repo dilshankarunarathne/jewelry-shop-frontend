@@ -3,6 +3,7 @@
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Container, Box, Typography, makeStyles } from '@material-ui/core';
 import { Navbar } from '../../components/Navbar';
+import { Button } from '@material-ui/core';
 
 const useStyles = makeStyles({
   container: {
