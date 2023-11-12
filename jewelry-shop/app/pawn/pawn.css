@@ -91,11 +91,6 @@ body {
     src: url('/Gwendolyn.ttf') format('truetype');
 }
 
-.sec3h {
-    color: white;
-    font-family: 'Gwendolyn', cursive; 
-}
-
 .fullScreen {
     height: 100vh;
     width: 100%;
