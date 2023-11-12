@@ -98,8 +98,13 @@ export default function PawnPage() {
         </Box>
       </Box>
 
-      <Box className="fullScreen marginTop about">
-        
+      <Box className="fullScreen marginTop about" style={{ 
+        backgroundImage: `url('/pawn-about-bg.png'})`, 
+        backgroundPosition: 'center', 
+        backgroundSize: 'cover', 
+        backgroundRepeat: 'no-repeat',
+      }}>
+        {/* about content goes here */}
       </Box>
     </Router>
   );
