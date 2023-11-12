@@ -6,7 +6,7 @@ import { Navbar } from '../../components/Navbar';
 
 const useStyles = makeStyles({
   container: {
-    background: 'none !important',
+    background: 'linear-gradient(to right, transparent, #FFFDCE) !important',
     minHeight: '100vh',
   },
 });
