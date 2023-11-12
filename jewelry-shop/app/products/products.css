@@ -24,6 +24,8 @@ p {
 .categoryTab {
     margin: auto 0;
     padding: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 .product-tiles {
