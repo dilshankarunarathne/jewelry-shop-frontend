@@ -63,6 +63,7 @@ export default function PawnPage() {
           DISCOVER MORE
         </Button>
       </Box>
+
       <Box className="fullScreen marginTop">
         <Typography className="h1p2" variant="h1">Our Services</Typography>
         <Box className="servicesContainer">
@@ -95,6 +96,10 @@ export default function PawnPage() {
             <Button className="button" variant="contained" color="primary">Action</Button>
           </Box>
         </Box>
+      </Box>
+
+      <Box className="fullScreen marginTop about">
+        
       </Box>
     </Router>
   );
