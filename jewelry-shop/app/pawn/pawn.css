@@ -64,13 +64,12 @@ body {
 
 .btn {
     font-family: 'Inria Sans';
-    color: 'black';
+    color: black;
     /* fontWeight: 'bold'; */
-    margin-top: '23px';
+    margin-top: 23px;
     text-align: 'center';
     padding: '6px 12px';
-    width: '200px';
-    background: '#FFE55E' !important;
+    background: '#FFE55E';
 }
 
 .sbp {
