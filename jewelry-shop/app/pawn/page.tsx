@@ -63,7 +63,7 @@ export default function PawnPage() {
       </Box>
 
       <Box className="fullScreen marginTop about">
-        <Grid container alignItems="center" justify="space-around">
+        <Grid container alignItems="center" justify="space-around" style={{ height: '100%' }}>
           <Grid item xs={6}>
             <Typography className={classes.sec3h} variant="h1" align="center">
               About Us
