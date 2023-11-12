@@ -4,6 +4,7 @@ import { Navbar } from '../../components/Navbar';
 import { Button, Typography, Container, makeStyles, Box } from '@material-ui/core';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { CssBaseline } from '@material-ui/core';
+import "/pawn.css"
 
 const useStyles = makeStyles((theme) => ({
   '@global': {
@@ -45,7 +46,7 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: 'Gudea',
     textShadow: '-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black',
   },
-  
+
   h1p2: {
   },
 }));
