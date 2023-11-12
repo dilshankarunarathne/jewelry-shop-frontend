@@ -40,7 +40,9 @@ body {
 }
 
 .h1p2 {
-    
+    color: rgb(122, 116, 116) !important;
+    font-size: 60px !important;
+    text-align: center !important;
 }
 
 .fullScreen {
