@@ -5,6 +5,8 @@ import { Container, Box, Typography, makeStyles } from '@material-ui/core';
 import { Navbar } from '../../components/Navbar';
 import { Button } from '@material-ui/core';
 
+import './about.css'
+
 const useStyles = makeStyles({
   container: {
     background: 'linear-gradient(90deg, rgba(2,0,36,0) 0%, rgba(255,253,206,1) 65%, rgba(255,253,206,1) 100%), url("/couple.png")',
@@ -21,7 +23,7 @@ const useStyles = makeStyles({
     marginTop: '23px',
   },
   h1: {
-    fontFamily: 'Gwendolyn',
+    fontFamily: "'Gwendolyn', cursive",
     fontSize: '120px',
     fontWeight: 400,
     lineHeight: '85px',
