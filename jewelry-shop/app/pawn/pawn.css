@@ -43,6 +43,8 @@ body {
     color: rgb(122, 116, 116) !important;
     font-size: 60px !important;
     text-align: center !important;
+    padding-bottom: 60px;
+    font-weight: 300;
 }
 
 .servicesContainer {
