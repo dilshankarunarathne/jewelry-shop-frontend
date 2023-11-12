@@ -57,12 +57,12 @@ export default function PawnPage() {
       <Box className="fullScreen marginTop about">
         <Grid container alignItems="center" justify="space-around">
           <Grid item xs={6}>
-            <Typography variant="h1" align="center">
+            <Typography variant="h1" align="center" className='sec3h'>
               About Us
             </Typography>
           </Grid>
           <Grid item xs={6}>
-            <Typography variant="body1" align="center">
+            <Typography variant="body1" align="center" className='sec3p'>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt 
               ut Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor 
               incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
