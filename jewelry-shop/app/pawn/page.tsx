@@ -3,16 +3,24 @@
 import { Navbar } from '../../components/Navbar';
 import { Button, Typography, Container, makeStyles, Box } from '@material-ui/core';
 import { BrowserRouter as Router } from 'react-router-dom';
+import { CssBaseline } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
+  '@global': {
+    body: {
+      backgroundImage: 'url("/rings-bg.png")',
+      backgroundRepeat: 'no-repeat',
+      backgroundSize: 'cover',
+    },
+  },
+  h1: {
+    color: 'white',
+  },
   root: {
     marginTop: theme.spacing(4),
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    background: 'url("/rings-bg.png")',
-    backgroundRepeat: 'no-repeat',
-    backgroundSize: 'cover',
   },
   button: {
     margin: theme.spacing(3, 0, 2),
@@ -31,7 +39,8 @@ export default function PawnPage() {
   const classes = useStyles();
 
   return (
-    <Router>
+    <Router>      
+      <CssBaseline />
         <Navbar />
         <Box className={classes.root}>
         <Typography variant="h1">40% Discount</Typography>
