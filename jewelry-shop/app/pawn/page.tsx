@@ -69,22 +69,22 @@ export default function PawnPage() {
           <Box className="serviceBox">
             <Typography variant="h1">Service 1</Typography>
             <Typography className="sbp" variant="body1">Service 1 description</Typography>
-            <Button variant="contained" color="primary">Action</Button>
+            <Button className="btn" variant="contained" color="primary">Action</Button>
           </Box>
           <Box className="serviceBox">
             <Typography variant="h1">Service 2</Typography>
             <Typography className="sbp" variant="body1">Service 2 description</Typography>
-            <Button variant="contained" color="primary">Action</Button>
+            <Button className="btn" variant="contained" color="primary">Action</Button>
           </Box>
           <Box className="serviceBox">
             <Typography variant="h1">Service 3</Typography>
             <Typography className="sbp" variant="body1">Service 3 description</Typography>
-            <Button variant="contained" color="primary">Action</Button>
+            <Button className="btn" variant="contained" color="primary">Action</Button>
           </Box>
           <Box className="serviceBox">
             <Typography variant="h1">Service 4</Typography>
             <Typography className="sbp" variant="body1">Service 4 description</Typography>
-            <Button variant="contained" color="primary">Action</Button>
+            <Button className="btn" variant="contained" color="primary">Action</Button>
           </Box>
         </Box>
       </Box>
