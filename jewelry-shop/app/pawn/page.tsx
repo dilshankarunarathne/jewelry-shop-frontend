@@ -65,7 +65,9 @@ export default function PawnPage() {
       </Box>
       <Box className="fullScreen marginTop">
         <Typography className="h1p2" variant="h1">Our Services</Typography>
-        {/* Add your new section content here */}
+        <Box>
+          
+        </Box>
       </Box>
     </Router>
   );
