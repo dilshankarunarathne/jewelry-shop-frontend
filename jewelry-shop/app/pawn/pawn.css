@@ -94,10 +94,10 @@ body {
 }
 
 .fullScreen {
-    height: 100vh;
+    height: 50%;
     width: 100%;
 }
 
 .marginTop {
-    margin-top: 100vh;
+    margin-top: 30%;
 }
