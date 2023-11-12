@@ -21,7 +21,9 @@ export default function AboutPage() {
     <Router>
         <Box className={classes.container}>
           <Navbar />
-          {/* Rest of your code */}
+          <Box>
+            
+          </Box>
         </Box>
     </Router>
   );
