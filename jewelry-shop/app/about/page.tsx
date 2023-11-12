@@ -20,6 +20,14 @@ const useStyles = makeStyles({
     // fontWeight: 'bold',
     marginTop: '23px',
   },
+  h1: {
+    fontFamily: 'Gwendolyn',
+    fontSize: '120px',
+    fontWeight: 400,
+    lineHeight: '85px',
+    letterSpacing: '0em',
+    textAlign: 'left',
+  },
 });
 
 export default function AboutPage() {
