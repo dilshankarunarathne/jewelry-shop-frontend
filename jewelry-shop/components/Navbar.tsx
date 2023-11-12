@@ -33,7 +33,7 @@ export function Navbar() {
         <RouterLink to="/"><Typography variant="h6">HOME</Typography></RouterLink>
         <RouterLink to="/products">
           <Typography variant="h6">
-            <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
+            <Button className='productsbtn' aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
               PRODUCTS
             </Button>
           </Typography>
