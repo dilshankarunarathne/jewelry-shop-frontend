@@ -52,12 +52,10 @@ export default function HomeContent() {
   }, []);
 
   useEffect(() => {
-      document.body.style.backgroundImage = `url(${slides[currentSlide].img})`;
-      document.body.style.backgroundPosition = 'left';
-      document.body.style.backgroundRepeat = 'no-repeat';
-      document.body.style.backgroundSize = 'contain';
-      document.body.style.backgroundAttachment = 'fixed';
-      document.body.style.height = '100vh';
+    document.body.style.backgroundImage = `url(${slides[currentSlide].img})`;
+    document.body.style.backgroundPosition = 'left';
+    document.body.style.backgroundRepeat = 'no-repeat';
+    document.body.style.backgroundSize = 'contain';
   }, [currentSlide]);
 
   return (
