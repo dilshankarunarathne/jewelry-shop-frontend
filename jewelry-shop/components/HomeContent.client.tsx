@@ -10,19 +10,19 @@ import './HomeContent.client.css';
 
 const slides = [
   { 
-    img: '/background-women-1.png', 
+    img: '/background-woman-4.png', 
     heading: "Enhance Your Beauty",
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' 
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' 
   },
   { 
-    img: '/background-women-2.png',
+    img: '/background-woman-4.png',
     heading: "Choose Your Style",
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' 
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' 
   },
   { 
-    img: '/background-women-3.png',
+    img: '/background-woman-4.png',
     heading: "Be Unique",
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' 
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' 
   }
 ];
 
@@ -53,7 +53,7 @@ export default function HomeContent() {
 
   useEffect(() => {
     document.body.style.backgroundImage = `url(${slides[currentSlide].img})`;
-    document.body.style.backgroundPosition = 'left';
+    document.body.style.backgroundPosition = 'right';
     document.body.style.backgroundRepeat = 'no-repeat';
     document.body.style.backgroundSize = 'contain';
   }, [currentSlide]);
@@ -66,8 +66,8 @@ export default function HomeContent() {
   
       <Box className="slide">
         <Box className="slide-content">
-          <Typography variant="h1" style={{ color: 'black' }}>{slides[currentSlide].heading}</Typography>
-          <Typography variant="body1" style={{ color: 'black' }}>{slides[currentSlide].description}</Typography>
+          <Typography variant="h1" style={{ color: 'white' }}>{slides[currentSlide].heading}</Typography>
+          <Typography variant="body1" style={{ color: 'white' }}>{slides[currentSlide].description}</Typography>
           <Button variant="contained">SEE COLLECTION</Button>
         </Box>
       </Box>

@@ -2,8 +2,12 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    color: #FFFDCE;
-    background-color: #FFFDCE !important;
+    color: #000000;
+    background-color: #080808 !important;
+}
+
+body::after {
+    background-color: transparent;
 }
 
 .App {

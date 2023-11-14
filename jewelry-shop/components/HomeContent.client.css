@@ -11,16 +11,21 @@
 }
 
 body {
-    background-image: url('/background-women-1.png');
-    background-position: center;
+    background-image: url('/background-women-4.png') ;
+    background-color: rgba(0, 0, 0, 0) !important; /* Set background to transparent */
+    background-position: right; /* Shift background image to the right */
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
 }
 
+.App {
+    /* background-color: black; */
+}
+
 .slide-content button {
-    background: #FFE55E;
+    background: #FFB714;
     font-family: 'Inria Sans';
     color: black;
     margin-top: 20px; 
@@ -33,7 +38,7 @@ body {
     line-height: 85px;
     letter-spacing: 0em;
     text-align: left;
-    color: black;
+    color: rgb(255, 255, 255);
     width: 65%;
 }
 
@@ -59,12 +64,12 @@ body {
 
 .slide {
     position: relative;
-    width: 100%;
+    width: 50%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin-left: 800px;
+    margin-left: 80px;
 }
 
 .slide-content {
@@ -81,13 +86,15 @@ body {
     margin-bottom: 20px;
     left: 50%;
     width: 100%;
+    background-color: rgba(0, 0, 0, 0) !important; 
 }
 
 .dot {
     height: 20px;
     width: 20px;
     margin: 0 10px;
-    background-color: #bbb;
+    background-color: transparent;
+    border: 1px solid #bbb;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;

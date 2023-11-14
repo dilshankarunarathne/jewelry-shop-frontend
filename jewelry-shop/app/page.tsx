@@ -13,7 +13,7 @@ export default function Home() {
         <div className="App">
           <Navbar />
           <HomeContent />
-          {/* <Footer /> */}
+          <Footer />
         </div>
       </main>
     </Router>
