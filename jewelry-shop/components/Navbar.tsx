@@ -45,9 +45,9 @@ export function Navbar() {
           open={Boolean(anchorEl)}
           onClose={handleClose}
         >
-          <MenuItem onClick={handleClose}><RouterLink to="/products/product1">Product 1</RouterLink></MenuItem>
-          <MenuItem onClick={handleClose}><RouterLink to="/products/product2">Product 2</RouterLink></MenuItem>
-          <MenuItem onClick={handleClose}><RouterLink to="/products">All Products</RouterLink></MenuItem>
+          <MenuItem className='menuitem' onClick={handleClose}><RouterLink to="/products/product1">Product 1</RouterLink></MenuItem>
+          <MenuItem className='menuitem' onClick={handleClose}><RouterLink to="/products/product2">Product 2</RouterLink></MenuItem>
+          <MenuItem className='menuitem' onClick={handleClose}><RouterLink to="/products">All Products</RouterLink></MenuItem>
         </Menu>
         <RouterLink to="/about"><Typography variant="h6">ABOUT US</Typography></RouterLink>
         <RouterLink to="/contact"><Typography variant="h6">CONTACT US</Typography></RouterLink>

@@ -7,6 +7,10 @@ h6 {
     color: #FFB714;
 }
 
+.menuitem {
+    color: #FFB714 !important;
+}
+
 nav {
     color: #FFB714;
     display: flex;
