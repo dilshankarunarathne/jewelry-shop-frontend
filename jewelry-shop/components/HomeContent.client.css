@@ -12,16 +12,12 @@
 
 body {
     background-image: url('/background-women-4.png') ;
-    background-color: rgba(0, 0, 0, 0) !important; /* Set background to transparent */
-    background-position: right; /* Shift background image to the right */
+    background-color: rgba(0, 0, 0, 0) !important;
+    background-position: right; 
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
-}
-
-.App {
-    /* background-color: black; */
 }
 
 .slide-content button {
