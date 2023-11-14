@@ -4,6 +4,13 @@ body {
 
 h2 {
     color: #FFB714;
+    text-align: center;
+}
+
+.image {
+    margin: 15px;
+    padding-bottom: 30px;
+    text-align: center;
 }
 
 .collection-tile {
@@ -16,6 +23,8 @@ h2 {
     /* border: 1px solid #000; */
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-in-out;
+    justify-content: center;
+    align-items: center;
 }
 
 .tile:hover {
@@ -24,9 +33,11 @@ h2 {
 }
 
 .collection-button {
+    display: flex;
     background-color: #FFB714;
     padding: 10px;
     margin: auto;
+    text-align: center;
 }
 
 .selected-tab {

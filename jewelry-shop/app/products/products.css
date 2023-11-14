@@ -13,7 +13,7 @@ h1 {
 
 p {
     text-align: center;
-    color: #FFB714 !important;
+    color: #FEE29B !important;
 }
 
 .category-buttons {
@@ -27,7 +27,14 @@ p {
     padding: 10px;
     margin-right: 20px;
     margin-left: 20px;
-    color: #FFB714 !important;
+    color: #FEE29B !important;
+    font-weight: 200;
+}
+
+.categoryTab.selected-tab {
+    color: #FFB714 !important; 
+    border: none; 
+    font-weight: 600;
 }
 
 .product-tiles {
