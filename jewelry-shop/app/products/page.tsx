@@ -5,7 +5,7 @@ import React, { useState, useEffect } from 'react';
 import { Navbar } from '../../components/Navbar' 
 import CollectionTile from '@/components/CollectionTile';
 import { BrowserRouter as Router } from 'react-router-dom';
-
+import backgroundImage from '/public/products-bg.png';
 import './products.css'
 
 export default function ProductsPage() {
@@ -14,7 +14,13 @@ export default function ProductsPage() {
   return (
     <Router>
     <main>
-      <div className="ProductsPage">
+      <div className="ProductsPage" style={{ 
+        background: 'url("/products-bg.png")',
+        backgroundColor: 'black', 
+        backgroundPosition: 'center',
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat'
+      }}>
         <Navbar />
         <div className='topic'>
             <h1>Latest Collection</h1>

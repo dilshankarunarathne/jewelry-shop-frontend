@@ -1,10 +1,15 @@
 body {
-    background-color: rgb(255, 255, 255) !important;
+    background-color: black (255, 255, 255) !important;
+}
+
+h2 {
+    color: #FFB714;
 }
 
 .collection-tile {
     padding: 20px;
     margin: 20px;
+    background-color: black;
 }
 
 .tile {
@@ -19,7 +24,7 @@ body {
 }
 
 .collection-button {
-    background-color: #FFFDCE;
+    background-color: #FFB714;
     padding: 10px;
     margin: auto;
 }

@@ -5,7 +5,7 @@ body {
 
 h1 {
     text-align: center;
-    color: black;
+    color: #FFB714;
     position: relative;
     margin-bottom: 20px;
     font-size: 40px;
@@ -13,7 +13,7 @@ h1 {
 
 p {
     text-align: center;
-    color: black !important;
+    color: #FFB714 !important;
 }
 
 .category-buttons {
@@ -27,6 +27,7 @@ p {
     padding: 10px;
     margin-right: 20px;
     margin-left: 20px;
+    color: #FFB714 !important;
 }
 
 .product-tiles {
