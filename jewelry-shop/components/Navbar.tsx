@@ -1,9 +1,11 @@
 "use client"
 
 import { useState } from 'react';
-import { Button, Link, Menu, MenuItem, Typography } from '@material-ui/core';
+import { Button,  Menu, MenuItem, Typography } from '@material-ui/core';
 import { Link as RouterLink } from 'react-router-dom';
 import Image from "next/image";
+
+import Link from 'next/link';
 
 import './Navbar.css'
 
@@ -26,18 +28,24 @@ export function Navbar() {
 
   return (
     <nav>
-      <RouterLink to="/">
+      <Link href="#home" passHref>
         <Image src="/logo.png" alt="Shop Logo" className="logo" width={100} height={100} />
-      </RouterLink>
+      </Link>
+
       <div className="navbar-items">
-        <RouterLink to="/"><Typography variant="h6">HOME</Typography></RouterLink>
-        <RouterLink to="/products">
+       
+        <Link href="/" passHref>
+          <Typography variant="h6">HOME</Typography>
+        </Link>
+
+        <Link href="#products" passHref>
           <Typography variant="h6">
             <Button className='productsbtn' aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
               <Typography variant="h6">PRODUCTS</Typography>
             </Button>
           </Typography>
-        </RouterLink>
+        </Link>
+
         <Menu
           id="simple-menu"
           anchorEl={anchorEl}
@@ -45,12 +53,28 @@ export function Navbar() {
           open={Boolean(anchorEl)}
           onClose={handleClose}
         >
-          <MenuItem className='menuitem' onClick={handleClose}><RouterLink to="/products/product1">Product 1</RouterLink></MenuItem>
-          <MenuItem className='menuitem' onClick={handleClose}><RouterLink to="/products/product2">Product 2</RouterLink></MenuItem>
-          <MenuItem className='menuitem' onClick={handleClose}><RouterLink to="/products">All Products</RouterLink></MenuItem>
+          <MenuItem className='menuitem' onClick={handleClose}>
+            <Link href="/products/product1" passHref>Product 1</Link>
+          </MenuItem>
+          <MenuItem className='menuitem' onClick={handleClose}>
+            <Link href="/products/product2" passHref>Product 2</Link>
+          </MenuItem>
+          <MenuItem className='menuitem' onClick={handleClose}>
+            <Link href="/products/product3" passHref>Product 3</Link>
+          </MenuItem>
         </Menu>
-        <RouterLink to="/about"><Typography variant="h6">ABOUT US</Typography></RouterLink>
-        <RouterLink to="/contact"><Typography variant="h6">CONTACT US</Typography></RouterLink>
+        
+        <Link href="#about" passHref>
+          <Typography variant="h6">
+            ABOUT US
+          </Typography>
+        </Link>
+
+        <Link href="#contact" passHref>
+          <Typography variant="h6">
+            CONTACT US
+          </Typography>
+        </Link>
       </div>
     </nav>
   );

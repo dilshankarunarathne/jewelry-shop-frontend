@@ -8,7 +8,7 @@ import './Footer.css';
 const Footer = () => {
   return (
     <footer>
-      <Box className='footer-main' >
+      <Box className='footer-main' id='contact'>
         <Box className='left-container'>
           <RouterLink to="/">
             <Typography className='links home' variant='h6'

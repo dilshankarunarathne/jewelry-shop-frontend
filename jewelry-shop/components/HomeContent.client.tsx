@@ -59,7 +59,7 @@ export default function HomeContent() {
   // }, [currentSlide]);
 
   return (
-    <Box className='slide-except-image'>
+    <Box id='home' className='slide-except-image'>
       <Box position="relative" className="slider">
         <IconButton onClick={goLeft} className='buttonsnextprev' 
           style={{ 

@@ -66,7 +66,7 @@ export default function AboutPage() {
 
   return (
     // <Router>
-        <Box className="container">
+        <Box className="container" id='about'>
           {/* <Navbar /> */}
           <Box className={classes.parentBox}>
             <Box className={classes.rightAlignBox}>

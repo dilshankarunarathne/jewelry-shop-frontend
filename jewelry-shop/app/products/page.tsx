@@ -16,6 +16,7 @@ export default function ProductsPage() {
     <main>
       <div 
         className="ProductsPage" 
+        id='products'
         style={{ 
           background: 'url("/products-bg.png")',
           backgroundColor: 'black', 
