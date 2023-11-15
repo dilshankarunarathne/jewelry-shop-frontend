@@ -1,10 +1,10 @@
 "use client"
 
-import { Navbar } from '../../components/Navbar';
 import { Button, Grid, Typography, Container, makeStyles, Box } from '@material-ui/core';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { CssBaseline } from '@material-ui/core';
 import "./pawn.css"
+import { NavbarPawn } from '@/components/NavbarPawn';
 
 const useStyles = makeStyles({
   sec3h: {
@@ -17,8 +17,8 @@ export default function PawnPage() {
   const classes = useStyles();
   return (
     <Router>      
-      <CssBaseline />
-      <Navbar />
+    <CssBaseline />
+      <NavbarPawn />
       <Box className="root">
         <Typography className="h1" variant="h1">40% Discount</Typography>
         <Typography className="subh" variant="body1">for all in every pawning of gold articles</Typography>

@@ -1,3 +1,32 @@
+.container {
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(2,0,36,0) 0%, rgba(255,253,206,1) 65%, rgba(255,253,206,1) 100%);
+    background-size: cover;
+}
+
+p {
+    color: black !important;
+}
+
+.image-container {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    background-color: black !important;
+    height: 100vh !important;
+    width: 100vw !important;
+}
+
+.couple-img {
+    width: 100vw;
+    height: 100vh;
+}
+
 @font-face {
     font-family: 'Gwendolyn';
     src: url('/Gwendolyn.ttf') format('truetype');

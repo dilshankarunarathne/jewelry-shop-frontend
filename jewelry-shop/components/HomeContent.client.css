@@ -8,23 +8,43 @@
     background-size: 50% 100%; 
     background-repeat: no-repeat;
     background-position: left center;
+    background-color: transparent !important;
 }
 
 body {
     background-image: url('/background-women-4.png') ;
-    background-color: rgba(0, 0, 0, 0) !important;
+    /* background-color: rgba(0, 0, 0, 0) !important; */
     background-position: right; 
     background-repeat: no-repeat;
-    background-size: cover;
+    /* background-size: cover; */
     background-attachment: fixed;
-    height: 100vh;
+    height: 100vh !important;
+}
+
+.slide-except-image {
+    background-color: transparent !important;
+    height: 100% !important;
+}
+
+.slide-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: black !important;
+    height: 100% !important;
+    object-fit: cover;
 }
 
 .slide-content button {
     background: #FFB714;
     font-family: 'Inria Sans';
     color: black;
-    margin-top: 20px; 
+    margin-top: 50px; 
+}
+
+.slider {
+    height: auto;
 }
 
 .slide-content h1 {
@@ -40,6 +60,7 @@ body {
 
 .slide-content p {
     width: 65%;
+    color: white !important;
     text-align: justify;
     font-family: 'Inria Sans' !important;
     font-size: 18px;
@@ -83,7 +104,7 @@ body {
     position: absolute;
     transform: translateX(-50%);
     bottom: 0;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     left: 50%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0) !important; 

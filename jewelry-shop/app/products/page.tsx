@@ -12,16 +12,19 @@ export default function ProductsPage() {
   const [selectedTab, setSelectedTab] = useState('all');
 
   return (
-    <Router>
+    // <Router>
     <main>
-      <div className="ProductsPage" style={{ 
-        background: 'url("/products-bg.png")',
-        backgroundColor: 'black', 
-        backgroundPosition: 'center',
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat'
-      }}>
-        <Navbar />
+      <div 
+        className="ProductsPage" 
+        style={{ 
+          background: 'url("/products-bg.png")',
+          backgroundColor: 'black', 
+          backgroundPosition: 'center',
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
+        {/* <Navbar /> */}
         <div className='topic'>
             <h1>Latest Collection</h1>
             <p className="intro-text">try our best collection of rings and necklace</p>
@@ -78,6 +81,6 @@ export default function ProductsPage() {
         </div>
       </div>
     </main>
-    </Router>
+    // </Router>
   )
 }

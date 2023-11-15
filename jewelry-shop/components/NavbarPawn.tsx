@@ -5,9 +5,9 @@ import { Button, Link, Menu, MenuItem, Typography } from '@material-ui/core';
 import { Link as RouterLink } from 'react-router-dom';
 import Image from "next/image";
 
-import './Navbar.css'
+import './NavbarPawn.css'
 
-export function Navbar() {
+export function NavbarPawn() {
   const [isActive, setIsActive] = useState(false);
 
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
@@ -27,7 +27,7 @@ export function Navbar() {
   return (
     <nav>
       <RouterLink to="/">
-        <Image src="/logo.png" alt="Shop Logo" className="logo" width={100} height={100} />
+        <Image src="/logo-pawn.png" alt="Shop Logo" className="logo" width={60} height={60} />
       </RouterLink>
       <div className="navbar-items">
         <RouterLink to="/"><Typography variant="h6">HOME</Typography></RouterLink>

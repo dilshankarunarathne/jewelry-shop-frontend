@@ -51,32 +51,62 @@ export default function HomeContent() {
     };
   }, []);
 
-  useEffect(() => {
-    document.body.style.backgroundImage = `url(${slides[currentSlide].img})`;
-    document.body.style.backgroundPosition = 'right';
-    document.body.style.backgroundRepeat = 'no-repeat';
-    document.body.style.backgroundSize = 'contain';
-  }, [currentSlide]);
+  // useEffect(() => {
+  //   document.body.style.backgroundImage = `url(${slides[currentSlide].img})`;
+  //   document.body.style.backgroundPosition = 'right';
+  //   document.body.style.backgroundRepeat = 'no-repeat';
+  //   document.body.style.backgroundSize = 'contain';
+  // }, [currentSlide]);
 
   return (
-    <Box position="relative" className="slider">
-      <IconButton onClick={goLeft} className='buttonsnextprev' style={{ position: 'absolute', left: 0, top: '50%', transform: 'translateY(-50%)' }}>
-        <ArrowBackIosIcon />
-      </IconButton>
-  
-      <Box className="slide">
-        <Box className="slide-content">
-          <Typography variant="h1" style={{ color: 'white' }}>{slides[currentSlide].heading}</Typography>
-          <Typography variant="body1" style={{ color: 'white' }}>{slides[currentSlide].description}</Typography>
-          <Button variant="contained">SEE COLLECTION</Button>
+    <Box className='slide-except-image'>
+      <Box position="relative" className="slider">
+        <IconButton onClick={goLeft} className='buttonsnextprev' 
+          style={{ 
+            position: 'absolute', 
+            left: 0, top: '50%', 
+            transform: 'translateY(-50%)',
+            // transform: 'translateX(50%)',
+            backgroundColor: '#FFB714' 
+          }}
+        >
+          <ArrowBackIosIcon />
+        </IconButton>
+    
+        <Box className="slide">
+          <Box className="slide-content">
+            <Typography variant="h1" 
+              style={{ color: 'white' }}>{slides[currentSlide].heading}
+            </Typography>
+            <Typography variant="body1" 
+              style={{ color: 'white' }}>{slides[currentSlide].description}
+            </Typography>
+            <Button variant="contained">SEE COLLECTION</Button>
+          </Box>
         </Box>
+
+        <IconButton onClick={goRight} className='buttonsnextprev' 
+          style={{ 
+            position: 'absolute', 
+            right: 0, top: '50%', 
+            transform: 'translateY(-50%)',
+            transform: 'translateX(-50%)', 
+            backgroundColor: '#FFB714' 
+          }}
+        >
+          <ArrowForwardIosIcon />
+        </IconButton>
+      </Box>
+    
+
+      <Box className="slide-image" >
+        <img src={slides[currentSlide].img} alt="slide" 
+          style={{ width: '100vw', height: '100vh', objectFit: 'cover' }} />
       </Box>
       
-      <IconButton onClick={goRight} className='buttonsnextprev' style={{ position: 'absolute', right: 0, top: '50%', transform: 'translateY(-50%)' }}>
-        <ArrowForwardIosIcon />
-      </IconButton>
+      
   
-      <Box className="dots">
+      {/* <Box className="dots">
         {slides.map((slide, index) => (
           <span 
             key={index} 
@@ -84,7 +114,7 @@ export default function HomeContent() {
             onClick={() => setCurrentSlide(index)}
           />
         ))}
-      </Box>
+      </Box> */}
     </Box>
   );
 }

@@ -5,6 +5,8 @@ import { Navbar } from '../components/Navbar'
 import HomeContent from '../components/HomeContent.client'
 import Footer from '../components/Footer'
 import './page.css'
+import ProductsPage from './products/page';
+import AboutPage from './about/page';
 
 export default function Home() {
   return (
@@ -13,6 +15,8 @@ export default function Home() {
         <div className="App">
           <Navbar />
           <HomeContent />
+          <ProductsPage />
+          <AboutPage />
           <Footer />
         </div>
       </main>

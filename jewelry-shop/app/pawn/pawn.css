@@ -8,35 +8,46 @@ body {
     color: white;
     font-family: Gudea;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black !important;
+    line-height: 80px !important;
 }
 
 .root {
-    margin-top: 32px;
+    /* margin-top: 32px; */
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    height: 100% !important;
+    position: relative;
+    /* padding-bottom: 150px; */
 }
 
 .button {
     margin: 24px 0 16px !important;
-    background: #FFE55E !important;
+    background: red !important;
     font-family: 'Inria Sans' !important;
-    color: black !important;
+    color: white !important;
     margin-top: 40px !important;
     text-align: center !important;
     padding: 6px 12px !important; 
     width: 200px !important;
+    margin-top: 70px !important;
 }
 
 .subh {
     color: white !important;
     font-family: Inter !important;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black !important;
+    /* font-family: sans-serif !important; */
+    font-size: 28px !important;
+    font-weight: 100 !important;
 }
 
 .text {
     color: rgb(176, 172, 172) !important;
     font-family: Gudea !important;
+    font-size: 15px !important;
+    margin-top: 15px !important;
 }
 
 .h1p2 {
@@ -49,14 +60,15 @@ body {
 
 .servicesContainer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    gap: 20px !important;
 }
 
 .serviceBox {
-    background-color: #FFE55E45;
+    background-color: #ff5e5e45;
     box-shadow: 0px 5px 13px 0px #0000001C;
     margin: 20px;
-    padding: 30px;
+    padding: 25px ; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -99,5 +111,6 @@ body {
 }
 
 .marginTop {
-    margin-top: 30%;
+    margin-top: 100px;
+    margin-bottom: 200px;
 }

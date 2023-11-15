@@ -1,8 +1,39 @@
-footer {
-    bottom: 0;
-    height: 100px;
-    left: 0;
-    position: absolute;
+.footer-main {
+    height: auto;
     width: 100%;
     margin-top: auto 0;
+    background-color: rgb(153, 151, 151) !important;
+    display: flex !important;
+    justify-content: space-between;
+    padding: 15px 20px ;
+    align-items: center;
+}
+
+.left-container {
+    width: 50%;
+    height: 100% !important;
+}
+
+.home {
+    font-family: 'sans-serif' !important;
+    font-size: 20px !important;
+}
+
+.right-container {
+    /* width: 50%; */
+    /* height: 100%; */
+}
+
+.routerlink {
+    height: 20px !important;
+}
+
+.links {
+    color: white !important;
+    height: auto !important;
+    padding-bottom: 0 !important;
+    font-family: 'sans-serif' !important;
+    font-size: 15px !important;
+    /* lowercase */
+    text-transform: lowercase !important;
 }

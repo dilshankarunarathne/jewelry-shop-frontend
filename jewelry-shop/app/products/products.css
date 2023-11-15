@@ -1,5 +1,5 @@
-body {
-    background-color: #FFFFFF; 
+.ProductsPage {
+    background-color: #000000; 
     /* background-color: #FFFDCE !important; */
 }
 
@@ -9,17 +9,20 @@ h1 {
     position: relative;
     margin-bottom: 20px;
     font-size: 40px;
+    line-height: 20px;
 }
 
 p {
     text-align: center;
     color: #FEE29B !important;
+    padding-bottom: 50px;
 }
 
 .category-buttons {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 30px;
 }
 
 .categoryTab {
@@ -29,6 +32,7 @@ p {
     margin-left: 20px;
     color: #FEE29B !important;
     font-weight: 200;
+    font-size: 15px !important;
 }
 
 .categoryTab.selected-tab {
@@ -54,4 +58,8 @@ p {
 
 .intro-text {
     margin-bottom: 40px;
+    color: #FFB714 !important;
+    font-family: 'Inter' !important;
+    font-weight: 100;
+    font-size: 20px !important;
 }

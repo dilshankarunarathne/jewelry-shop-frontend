@@ -2,8 +2,8 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    color: #000000;
-    background-color: #080808 !important;
+    color: black !important;
+    /* background-color: black !important; */
 }
 
 body::after {
@@ -20,6 +20,6 @@ body::after {
     flex-grow: 1;
 }
 
-.Footer {
+/* .Footer {
     margin-top: auto;
-}
+} */
