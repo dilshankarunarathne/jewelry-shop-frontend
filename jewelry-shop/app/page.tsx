@@ -13,11 +13,11 @@ export default function Home() {
     <Router>
       <main>
         <div className="App">
-          <Navbar />
+          {/* <Navbar /> */}
           <HomeContent />
           <ProductsPage />
           <AboutPage />
-          <Footer />
+          {/* <Footer /> */}
         </div>
       </main>
     </Router>

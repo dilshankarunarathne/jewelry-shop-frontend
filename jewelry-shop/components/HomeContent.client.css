@@ -23,7 +23,7 @@ body {
 
 .slide-except-image {
     background-color: transparent !important;
-    height: 100% !important;
+    /* height: 100% !important; */
 }
 
 .slide-image {
@@ -125,16 +125,43 @@ body {
     background-color: #717171;
 }
 
-@media (max-width: 768px) {
+
+@media (max-width: 600px) {
+    .slide-except-image {
+        height: 100% !important;
+        position: static !important;
+    }
+
     .slider {
-        background-size: 100% 50%;
+        flex-direction: column;
+        height: auto;
     }
 
-    .slide-content {
-        padding: 0 20px;
+    .slide {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
     }
 
-    .dots {
-        bottom: 20px;
+    .slide-content h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .slide-content p {
+        font-size: 16px;
+    }
+
+    .buttonsnextprev:first-child, .buttonsnextprev:last-child {
+        display: none;
+    }
+
+    .slide-content button {
+        margin-top: 20px;
+    }
+
+    .slide-image img {
+        width: 100%;
+        height: auto;
     }
 }

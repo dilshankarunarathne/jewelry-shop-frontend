@@ -31,3 +31,23 @@ p {
     font-family: 'Gwendolyn';
     src: url('/Gwendolyn.ttf') format('truetype');
 }
+
+@media (max-width: 600px) {
+    .container {
+        display: static !important;
+    }
+
+    /* .image-container {
+        position: static;
+        height: auto;
+        width: 100%;
+    }
+    */
+
+    .couple-img {
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        object-position: left;
+    }
+}

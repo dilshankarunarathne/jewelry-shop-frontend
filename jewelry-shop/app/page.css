@@ -11,9 +11,9 @@ body::after {
 }
 
 .App {
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
+    display: flex !important;
+    flex-direction: column !important;
+    /* min-height: 100%; */
 }
 
 .HomeContent {
@@ -23,3 +23,10 @@ body::after {
 /* .Footer {
     margin-top: auto;
 } */
+
+@media (max-width: 600px) {
+    .ProductsPage {
+        height: auto !important;
+        position: absolute !important;
+    }
+}

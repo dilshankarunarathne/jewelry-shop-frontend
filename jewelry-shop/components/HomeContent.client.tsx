@@ -89,8 +89,7 @@ export default function HomeContent() {
           style={{ 
             position: 'absolute', 
             right: 0, top: '50%', 
-            transform: 'translateY(-50%)',
-            transform: 'translateX(-50%)', 
+            transform: 'translateY(-50%)', 
             backgroundColor: '#FFB714' 
           }}
         >

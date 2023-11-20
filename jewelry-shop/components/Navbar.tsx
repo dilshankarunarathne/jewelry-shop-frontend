@@ -1,9 +1,10 @@
 "use client"
 
 import { useState } from 'react';
-import { Button,  Menu, MenuItem, Typography } from '@material-ui/core';
+import { Button,  Menu, MenuItem, Typography, Drawer, List, ListItem, IconButton } from '@material-ui/core';
 import { Link as RouterLink } from 'react-router-dom';
 import Image from "next/image";
+import MenuIcon from '@material-ui/icons/Menu';
 
 import Link from 'next/link';
 
@@ -13,6 +14,16 @@ export function Navbar() {
   const [isActive, setIsActive] = useState(false);
 
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
+
+  const [drawerOpen, setDrawerOpen] = useState(false);
+
+  const handleDrawerOpen = () => {
+    setDrawerOpen(true);
+  };
+
+  const handleDrawerClose = () => {
+    setDrawerOpen(false);
+  };
 
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
     setAnchorEl(event.currentTarget);
@@ -28,6 +39,23 @@ export function Navbar() {
 
   return (
     <nav>
+      <IconButton edge="start" color="inherit" className='drawerbtn' aria-label="menu" onClick={handleDrawerOpen}>
+        <MenuIcon />
+      </IconButton>
+      
+      <Drawer 
+        anchor="left" 
+        open={drawerOpen} 
+        onClose={handleDrawerClose}
+      >
+        <List>
+          <ListItem button component="a" href="#home">HOME</ListItem>
+          <ListItem button component="a" href="#products">PRODUCTS</ListItem>
+          <ListItem button component="a" href="#about">ABOUT US</ListItem>
+          <ListItem button component="a" href="#contact">CONTACT US</ListItem>
+        </List>
+      </Drawer>
+
       <Link href="#home" passHref>
         <Image src="/logo.png" alt="Shop Logo" className="logo" width={100} height={100} />
       </Link>
