@@ -10,6 +10,9 @@ const useStyles = makeStyles({
   sec3h: {
     fontFamily: "'Gwendolyn', cursive",
     color: 'White',
+    '@media (max-width:600px)': {
+      fontSize: '60px',
+    },
   }
 });
 
@@ -20,7 +23,7 @@ export default function PawnPage() {
     <CssBaseline />
       <NavbarPawn />
       <Box className="root">
-        <Typography className="h1" variant="h1">40% Discount</Typography>
+        <Typography className="h1 mainhead" variant="h1">40% Discount</Typography>
         <Typography className="subh" variant="body1">for all in every pawning of gold articles</Typography>
         <Typography className="text" variant="body1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod</Typography>
         <Button variant="contained" color="primary" className="button">
@@ -63,14 +66,14 @@ export default function PawnPage() {
       </Box>
 
       <Box className="fullScreen marginTop about">
-        <Grid container alignItems="center" justify="space-around" style={{ height: '100%' }}>
-          <Grid item xs={6}>
+        <Grid className='aboutContainer topspace' container alignItems="center" justify="space-around" style={{ height: '100%' }}>
+          <Grid item xs={6} className='maxwidth70'>
             <Typography className={classes.sec3h} variant="h1" align="center">
               About Us
             </Typography>
           </Grid>
-          <Grid item xs={6}>
-            <Typography variant="body1" align="center" className='sec3p'>
+          <Grid item xs={6} className='maxwidth80'>
+            <Typography variant="body1" align="center" className='sec3p aboutp'>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt 
               ut Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor 
               incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 

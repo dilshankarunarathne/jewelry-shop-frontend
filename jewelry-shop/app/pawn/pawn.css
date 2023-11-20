@@ -118,6 +118,7 @@ body {
 @media only screen and (max-width: 600px) {
     .root {
       flex-direction: column;
+      align-items: center;
     }
   
     .servicesContainer {
@@ -133,9 +134,58 @@ body {
     .fullScreen {
       height: 100%;
     }
+
+    .mainhead {
+        font-size: 40px !important;
+    }
+
+    .text {
+        text-align: center;
+        margin: 20px !important;
+        padding: 10px !important;
+    }
+
+    .subh {
+        font-size: 20px !important;
+        text-wrap: wrap !important;
+        width: 100%;
+        margin: 20px !important;
+        text-align: center;
+    }
   
     .sec3p, .sec3h {
       padding: 20px;
+    }
+
+    .sec3h-1 {
+        font-family: gwendolyn !important;
+        font-size: 10px !important;
+    }
+
+    .maxwidth70 {
+        max-width: 70% !important;
+    }
+
+    .maxwidth80 {
+        max-width: 80% !important;
+    }
+
+    .topspace {
+        /* margin-top: 80px !important; */
+        position: absolute;
+    }
+
+    .aboutContainer {
+        display: flex;
+        margin-top: 40px !important;
+        height: auto !important;
+        flex-wrap: nowrap !important;
+        flex-direction: column !important;
+    }
+
+    .aboutp {
+        width: 100% !important;
+        padding: 20px !important;
     }
 
     .services {
