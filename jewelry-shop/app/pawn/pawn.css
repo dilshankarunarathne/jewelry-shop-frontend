@@ -162,6 +162,10 @@ body {
         font-size: 10px !important;
     }
 
+    .h1p2 {
+        font-size: 45px !important;
+    }
+
     .maxwidth70 {
         max-width: 70% !important;
     }
@@ -186,6 +190,7 @@ body {
     .aboutp {
         width: 100% !important;
         padding: 20px !important;
+        font-size: 15px !important;
     }
 
     .services {

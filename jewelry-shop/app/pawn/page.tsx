@@ -11,7 +11,7 @@ const useStyles = makeStyles({
     fontFamily: "'Gwendolyn', cursive",
     color: 'White',
     '@media (max-width:600px)': {
-      fontSize: '60px',
+      fontSize: '70px',
     },
   }
 });

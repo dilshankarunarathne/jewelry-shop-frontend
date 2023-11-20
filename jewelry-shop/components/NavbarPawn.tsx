@@ -46,11 +46,11 @@ export function NavbarPawn() {
         anchor="left" 
         open={drawerOpen} 
         onClose={handleDrawerClose}
-        // PaperProps={{
-        //   style: {
-        //     backgroundColor: 'transparent',
-        //   },
-        // }}
+        PaperProps={{
+          style: {
+            backgroundColor: 'red',
+          },
+        }}
       >
         <List>
           <ListItem className='list-item' button component="a" href="#home">HOME</ListItem>

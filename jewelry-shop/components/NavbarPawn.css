@@ -114,7 +114,8 @@ nav a {
 }
 
 .list-item {
-    color: red;
+    color: black !important;
+    font-size: 12px !important;
 }
 
 @media only screen and (max-width: 600px) {
