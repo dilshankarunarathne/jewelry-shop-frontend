@@ -22,7 +22,7 @@ export default function PawnPage() {
     <Router>      
     <CssBaseline />
       <NavbarPawn />
-      <Box className="root">
+      <Box className="root" id='home'>
         <Typography className="h1 mainhead" variant="h1">40% Discount</Typography>
         <Typography className="subh" variant="body1">for all in every pawning of gold articles</Typography>
         <Typography className="text" variant="body1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod</Typography>
@@ -31,7 +31,7 @@ export default function PawnPage() {
         </Button>
       </Box>
 
-      <Box className="fullScreen marginTop services">
+      <Box className="fullScreen marginTop services" id='services'>
         <Typography className="h1p2" variant="h1">Our Services</Typography>
         <Box className="servicesContainer">
           <Box className="serviceBox">
@@ -65,7 +65,7 @@ export default function PawnPage() {
         </Box>
       </Box>
 
-      <Box className="fullScreen marginTop about">
+      <Box className="fullScreen marginTop about" id='about'>
         <Grid className='aboutContainer topspace' container alignItems="center" justify="space-around" style={{ height: '100%' }}>
           <Grid item xs={6} className='maxwidth70'>
             <Typography className={classes.sec3h} variant="h1" align="center">

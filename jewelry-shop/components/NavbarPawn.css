@@ -31,6 +31,7 @@ nav a {
     padding-right: 50px;
     text-decoration: none;
     color: inherit;
+    z-index: 1000; 
 }
 
 /* Navbar.css */
@@ -106,25 +107,38 @@ nav a {
     display: none;
 }
 
-@media (max-width: 768px) {
-    .menu-button {
-        display: block;
+.navbar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-item {
+    color: red;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar-items {
+      display: none !important;
     }
 
-    nav {
-        position: fixed;
-        height: 100vh;
-        width: 80%;
-        flex-direction: column;
-        justify-content: start;
-        padding: 20px;
-        transform: translateX(-100%);
-        transition: transform 0.3s ease-in-out;
-        background-color: #fff; /* Add a background color */
-        z-index: 1000; /* Ensure the nav is above other elements */
+    .navbar-header {
+        justify-content: space-between;
+        z-index: 1000;
+        width: 100%;
     }
 
-    nav.active {
-        transform: translateX(0);
+    .drawbtn {
+        margin-left: 20px !important;
+    }
+
+    .logo {
+        padding: 0 !important;
+    }
+}
+  
+@media only screen and (min-width: 601px) {
+    .MuiIconButton-root {
+      display: none !important;
     }
 }
