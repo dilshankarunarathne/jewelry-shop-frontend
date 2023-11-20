@@ -28,7 +28,7 @@ export default function PawnPage() {
         </Button>
       </Box>
 
-      <Box className="fullScreen marginTop">
+      <Box className="fullScreen marginTop services">
         <Typography className="h1p2" variant="h1">Our Services</Typography>
         <Box className="servicesContainer">
           <Box className="serviceBox">

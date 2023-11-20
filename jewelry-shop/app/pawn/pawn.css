@@ -114,3 +114,31 @@ body {
     margin-top: 100px;
     margin-bottom: 200px;
 }
+
+@media only screen and (max-width: 600px) {
+    .root {
+      flex-direction: column;
+    }
+  
+    .servicesContainer {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .serviceBox {
+      width: 80vw;
+      margin-bottom: 20px;
+    }
+  
+    .fullScreen {
+      height: 100%;
+    }
+  
+    .sec3p, .sec3h {
+      padding: 20px;
+    }
+
+    .services {
+        height: auto !important;
+    }
+}
