@@ -47,6 +47,11 @@ export function Navbar() {
         anchor="left" 
         open={drawerOpen} 
         onClose={handleDrawerClose}
+        PaperProps={{
+          style: {
+            backgroundColor: '#FFB714',
+          },
+        }}
       >
         <List>
           <ListItem button component="a" href="#home">HOME</ListItem>

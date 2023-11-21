@@ -85,16 +85,20 @@ body {
 .slide {
     position: relative;
     width: 50%;
-    height: 150%;
+    height: 100vh !important;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     margin-left: 80px;
+    padding-top: 150px;
 }
 
 .slide-content {
     text-align: left;
     padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
 }
 
 .dots {
@@ -146,8 +150,10 @@ body {
 
     .slide {
         width: 100%;
-        height: auto;
+        height: 90vh !important;
         margin-left: 0;
+        padding-top: 30px !important;
+        margin-top: 0 !important;
     }
 
     .slide-content h1 {

@@ -22,15 +22,16 @@ nav {
     background-color: transparent;
     padding: 10px;
     padding-right: 40px;
-    /* height: 250px; */
+    position: absolute;
+    width: 100%;
 }
 
 nav a {
-    padding: 20px;
+    padding: 10px;
     padding-right: 50px;
     text-decoration: none;
     color: inherit;
-    /* height: 250px; */
+    z-index: 1000; 
 }
 
 /* Navbar.css */
@@ -41,7 +42,7 @@ nav a {
 }
 
 /* .logo {
-    height: 200px; 
+    height: 50px; 
 } */
 
 .first-link {
@@ -61,12 +62,11 @@ nav a {
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-    font-weight: 100 !important;
 }
 
 /* Dropdown Button */
 .dropbtn {
-    color: #FFB714;
+    color: #ffc814;
     border: none;
 }
 
@@ -88,7 +88,7 @@ nav a {
 
 /* Links inside the dropdown */
 .dropdown-content a {
-    color: #FFB714;
+    color: #ffeb14;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -107,52 +107,47 @@ nav a {
     display: none;
 }
 
-.menu-button {
-    display: none;
+.navbar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-@media (max-width: 768px) {
-    .menu-button {
-        display: block;
-    }
+.list-item {
+    color: black !important;
+    font-size: 12px !important;
+}
 
+@media only screen and (max-width: 600px) {
     .navbar-items {
-        display: none;
+      display: none !important;
     }
 
-    nav {
-        position: fixed;
-        height: 100vh;
-        width: 80%;
-        flex-direction: column;
-        justify-content: start;
-        padding: 20px;
-        transform: translateX(-100%);
-        transition: transform 0.3s ease-in-out;
-        background-color: #db1f1f; 
-        z-index: 1000; 
-    }
-
-    nav.active {
-        transform: translateX(0);
+    .navbar-header {
+        justify-content: space-between;
+        z-index: 1000;
+        width: 100%;
     }
 
     .drawerbtn {
-        display: block !important;
-        color: red !important; 
-        z-index: 2 !important; 
-        position: fixed !important;
-        top: 0 !important;
-        left: 0 !important;
+        z-index: 10 !important;
+        margin-left: 20px !important;
+        padding-top: 20px !important;
+    }
+
+    .logo {
+        padding: 0 !important;
+        display: none !important;
     }
 }
-
-@media (min-width: 769px) {
-    .menu-button {
-        display: none;
+  
+@media only screen and (min-width: 601px) {
+    .MuiIconButton-root {
+      display: none !important;
     }
 
-    .drawerbtn {
-        display: none !important;
+    .drawbtn {
+        z-index: 10 !important;
+        margin-left: 20px !important;
     }
 }
