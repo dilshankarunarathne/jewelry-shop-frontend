@@ -33,7 +33,10 @@ const useStyles = makeStyles({
     letterSpacing: '0em',
     textAlign: 'left',
     paddingBottom: '5px',
-    color: 'black'
+    color: 'black',
+    display: 'flex',
+    justifyContent: 'flex-end',
+    marginBottom: '50px',
   },
   paragraph: {
     fontFamily: 'Inter',
@@ -47,7 +50,7 @@ const useStyles = makeStyles({
   rightAlignBox: {
     display: 'flex',
     flexDirection: 'column',
-    width: '60%',
+    // width: '60%',
     paddingRight: '40px',
     marginLeft: 'auto',
     alignItems: 'center',

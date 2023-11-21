@@ -1,6 +1,6 @@
 .container {
     min-height: 100vh;
-    min-width: 100vw;
+    min-width: 100% !important;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,12 +19,16 @@ p {
     z-index: -1;
     background-color: black !important;
     height: 100vh !important;
-    width: 100vw !important;
+    width: auto !important;
 }
 
 .couple-img {
-    width: 100vw;
+    width: auto !important;
     height: 100vh;
+}
+
+.rightAlignBox {
+    height: 100% !important;
 }
 
 @font-face {

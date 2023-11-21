@@ -13,7 +13,7 @@ export default function Home() {
     <Router>
       <main>
         <div className="App">
-          {/* <Navbar /> */}
+          <Navbar />
           <HomeContent />
           <ProductsPage />
           <AboutPage />
