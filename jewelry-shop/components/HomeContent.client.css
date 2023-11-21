@@ -137,6 +137,13 @@ body {
         height: auto;
     }
 
+    .slide-content {
+        padding-bottom: 0;
+        padding-top: 50px;
+        margin: 30px 30px;
+        text-align: left;
+    }
+
     .slide {
         width: 100%;
         height: auto;
@@ -150,6 +157,8 @@ body {
 
     .slide-content p {
         font-size: 16px;
+        text-align: left;
+        margin-top: 20px;
     }
 
     .buttonsnextprev:first-child, .buttonsnextprev:last-child {
@@ -158,6 +167,7 @@ body {
 
     .slide-content button {
         margin-top: 20px;
+        align-self: flex-start !important;
     }
 
     .slide-image img {
