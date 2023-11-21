@@ -17,7 +17,7 @@ export default function Home() {
           <HomeContent />
           <ProductsPage />
           <AboutPage />
-          {/* <Footer /> */}
+          <Footer />
         </div>
       </main>
     </Router>
