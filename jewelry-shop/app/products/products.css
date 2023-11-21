@@ -22,7 +22,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 30px;
+    /* padding-bottom: 30px; */
 }
 
 .categoryTab {
@@ -82,6 +82,7 @@ p {
     .category-buttons {
         flex-direction: column;
         padding-bottom: 20px;
+        margin-bottom: 0px !important;
     }
 
     .categoryTab {
@@ -97,6 +98,7 @@ p {
     }
 
     .topic {
+        margin-bottom: 0px !important;
         height: fit-content;
         padding: 90px 0;
         margin-top: 40px;

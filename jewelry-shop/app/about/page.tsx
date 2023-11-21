@@ -69,9 +69,9 @@ export default function AboutPage() {
         <Box className="container" id='about'>
           {/* <Navbar /> */}
           <Box className={classes.parentBox}>
-            <Box className={classes.rightAlignBox}>
-              <Typography className={classes.h1} variant="h1">The Hallmark of Elegance</Typography>
-              <Typography className={classes.paragraph} variant="body1" style={{ color: 'black' }}>
+            <Box className={`${classes.rightAlignBox} rightAlignBox`}>
+              <Typography className={`${classes.h1} topic`} variant="h1">The Hallmark of Elegance</Typography>
+              <Typography className={`${classes.paragraph} para`} variant="body1" style={{ color: 'black' }}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
               </Typography>
               <Button className={classes.button} variant="contained" color="primary">Discover More</Button>

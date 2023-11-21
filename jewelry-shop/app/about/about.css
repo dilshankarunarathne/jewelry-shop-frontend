@@ -35,14 +35,42 @@ p {
 @media (max-width: 600px) {
     .container {
         display: static !important;
+        background: linear-gradient(0deg, rgba(255,253,206,1) 0%, rgba(255,253,206,1) 15%, rgba(2,0,36,0) 100%) !important;
     }
-
+    
     /* .image-container {
         position: static;
         height: auto;
         width: 100%;
     }
     */
+    .rightAlignBox {
+        width: auto !important;
+        height: 100% !important;
+        padding: 80px 20px 20px 20px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: flex-end !important;
+    }
+
+    .topic {
+        font-size: 50px !important;
+        font-weight: 600 !important;
+        /* lower line space */
+        line-height: 1.15 !important;
+        text-align: center !important;
+        /* padding-right: 30px; */
+        /* margin-bottom: 30px !important; */
+    }
+
+    .para {
+        font-size: 15px !important;
+        line-height: 1.15 !important;
+        font-weight: 100 !important;
+        text-align: center !important;
+        padding-right: 30px;
+        margin-bottom: 30px !important;
+    }
 
     .couple-img {
         width: 100vw;
